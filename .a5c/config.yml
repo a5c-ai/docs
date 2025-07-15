@@ -5,12 +5,16 @@ remote_agents:
   retry_delay: 2000   # Delay between retries in milliseconds
   sources:
     individual:
-      # Individual agent files
       - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/developer-agent.agent.md"
         alias: "developer-agent"
       - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/validator-agent.agent.md"
         alias: "validator-agent"
       - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/build-fixer-agent.agent.md"
         alias: "build-fixer-agent"
+
+      # Content creation agents for documentation
       - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/communication/content-writer-agent.agent.md"
         alias: "content-writer-agent"
+      # Research agents for documentation improvement
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/research/researcher-base-agent.agent.md"
+        alias: "researcher-agent"
