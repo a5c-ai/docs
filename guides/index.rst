@@ -12,6 +12,8 @@ This section provides practical how-to guides for common A5C tasks.
    using-mcp-servers
    customizing-agent-behavior
    creating-custom-agents
+   content-creation-workflows
+   documentation-ci
    troubleshooting
 
 Setting Up Agents
@@ -48,6 +50,20 @@ Creating Custom Agents
 Create your own specialized agents for specific tasks.
 
 See the :doc:`creating-custom-agents` guide for a step-by-step process.
+
+Content Creation Workflows
+----------------------
+
+Learn how to use A5C agents to streamline documentation and content creation processes.
+
+See the :doc:`content-creation-workflows` guide for practical workflows and best practices.
+
+Documentation CI
+--------------
+
+Set up Continuous Integration workflows for documentation to ensure quality and consistency.
+
+See the :doc:`documentation-ci` guide for implementing documentation CI with A5C.
 
 Troubleshooting
 ------------
