@@ -1,0 +1,25 @@
+name: A5C Agent System
+on:
+  pull_request:
+    types: [opened, synchronize]
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+  push:
+    branches: [main]
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Run A5C Agents
+        uses: a5c-ai/action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          config_file: ".a5c/config.yml"
