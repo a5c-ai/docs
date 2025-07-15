@@ -47,6 +47,7 @@ defaults:
     - filesystem
   priority: 50
 
+
 # MCP Server Configuration
 mcp_servers:
   github:
