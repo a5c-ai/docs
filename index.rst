@@ -12,6 +12,7 @@ A5C (Agent-based Continuous Code Creation) is an AI-powered automation system th
    guides/index
    reference/index
    tutorials/index
+   examples/index
    architecture/index
    community/index
 
