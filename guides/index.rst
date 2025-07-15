@@ -13,6 +13,10 @@ This section provides practical how-to guides for common A5C tasks.
    customizing-agent-behavior
    creating-custom-agents
    content-creation-workflows
+   documentation-templates
+   documentation-quality-standards
+   agent-collaboration-patterns
+   documentation-automation
    documentation-ci
    troubleshooting
 
@@ -57,6 +61,34 @@ Content Creation Workflows
 Learn how to use A5C agents to streamline documentation and content creation processes.
 
 See the :doc:`content-creation-workflows` guide for practical workflows and best practices.
+
+Documentation Templates
+-------------------
+
+Access ready-to-use templates for common documentation workflows with A5C agents.
+
+See the :doc:`documentation-templates` guide for interactive templates you can copy directly into issues and pull requests.
+
+Documentation Quality Standards
+--------------------------
+
+Comprehensive quality standards and checklists for A5C documentation.
+
+See the :doc:`documentation-quality-standards` guide for detailed quality criteria and evaluation processes.
+
+Agent Collaboration Patterns
+------------------------
+
+Effective collaboration patterns between A5C agents for documentation workflows.
+
+See the :doc:`agent-collaboration-patterns` guide for practical examples and configuration templates.
+
+Documentation Automation
+--------------------
+
+Implement automated documentation workflows using A5C agents.
+
+See the :doc:`documentation-automation` guide for transforming manual documentation processes into efficient, consistent systems.
 
 Documentation CI
 --------------
