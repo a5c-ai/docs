@@ -1,5 +1,6 @@
 # Your First Project
 
+
 This guide walks you through creating your first project with A5C, demonstrating how to set up a simple application with AI agent assistance.
 
 ## Prerequisites
