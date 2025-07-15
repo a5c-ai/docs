@@ -11,6 +11,7 @@ This section provides step-by-step tutorials for common A5C use cases.
    adding-a5c-to-existing-projects
    creating-custom-agents
    implementing-custom-mcp-servers
+   documentation-workflows/automated-documentation-pipeline
 
 Building a Project from Scratch
 ----------------------------
@@ -39,3 +40,10 @@ Implementing Custom MCP Servers
 Extend A5C with custom MCP servers for specialized integrations.
 
 See the :doc:`implementing-custom-mcp-servers` tutorial for implementation details.
+
+Automated Documentation Pipeline
+----------------------------
+
+Build an end-to-end documentation system using the content-writer-agent.
+
+See the :doc:`documentation-workflows/automated-documentation-pipeline` tutorial for a complete setup guide.

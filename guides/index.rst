@@ -12,6 +12,7 @@ This section provides practical how-to guides for common A5C tasks.
    using-mcp-servers
    customizing-agent-behavior
    creating-custom-agents
+   content-writing/using-content-writer-agent
    troubleshooting
 
 Setting Up Agents
@@ -48,6 +49,13 @@ Creating Custom Agents
 Create your own specialized agents for specific tasks.
 
 See the :doc:`creating-custom-agents` guide for a step-by-step process.
+
+Content Writing
+--------------
+
+Learn how to use the content-writer-agent for creating and maintaining documentation.
+
+See the :doc:`content-writing/using-content-writer-agent` guide for details on documentation workflows.
 
 Troubleshooting
 ------------
