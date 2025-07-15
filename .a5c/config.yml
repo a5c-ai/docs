@@ -1,3 +1,64 @@
+# A5C Global Configuration
+version: 1.0.0
+
+# System Settings
+system:
+  log_level: info
+  execution_mode: parallel
+  max_concurrent_agents: 5
+  timeout: 60  # Global timeout in seconds
+  retry_attempts: 3
+  allowed_models:
+    - claude-3-7-sonnet-20250219
+    - claude-3-5-sonnet-20240620
+    - claude-3-opus-20240229
+
+# Default Agent Settings
+defaults:
+  model: claude-3-7-sonnet-20250219
+  max_turns: 20
+  verbose: false
+  mcp_servers:
+    - github
+    - filesystem
+  priority: 50
+
+# MCP Server Configuration
+mcp_servers:
+  github:
+    enabled: true
+    rate_limit: 5000
+  filesystem:
+    enabled: true
+    root_path: ./
+  memory:
+    enabled: true
+    persistence: session
+
+# Agent Discovery Settings
+agent_discovery:
+  enabled: true
+  discovery_depth: 2
+  max_agents_in_context: 5
+
+# Category-specific Settings
+categories:
+  development:
+    priority: 70
+    model: claude-3-7-sonnet-20250219
+  documentation:
+    priority: 65
+    model: claude-3-7-sonnet-20250219
+  security:
+    priority: 80
+    mcp_servers:
+      - github
+      - security_scanner
+  communication:
+    priority: 60
+    model: claude-3-5-sonnet-20240620
+
+# Remote Agents Configuration
 remote_agents:
   enabled: true
   cache_timeout: 120  # Cache timeout in minutes (2 hours)
