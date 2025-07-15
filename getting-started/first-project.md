@@ -1,214 +1,255 @@
 # Your First Project
 
-This guide walks you through creating your first project with A5C, from initial setup to completion.
+
+This guide walks you through creating your first project with A5C, demonstrating how to set up a simple application with AI agent assistance.
 
 ## Prerequisites
 
-Before starting, ensure you have:
+Before starting your first A5C project, ensure you have:
 
-- A GitHub account with repository creation permissions
+- Completed the [Installation](installation.md) process
+- A GitHub repository with A5C configured
+- Basic understanding of the [Quick Start](quick-start.md) concepts
 - An Anthropic API key for Claude access
-- Basic familiarity with GitHub and git
+- Git installed on your local machine
 
-## Setting Up Your Project
+## Project Overview
 
-### 1. Create a New Repository
+In this tutorial, we'll build a simple task management API using:
 
-You have two options for creating your project:
+- Node.js and Express for the backend
+- A5C agents for development assistance
+- GitHub for source control and collaboration
 
-#### Option A: Use the Zero-to-Demo Template (Recommended for Beginners)
+## Step 1: Create a New Repository
 
-1. Go to [a5c-ai/zero-to-demo](https://github.com/a5c-ai/zero-to-demo)
-2. Click "Use this template"
-3. Name your repository (e.g., "my-first-a5c-project")
-4. Set visibility as needed (public or private)
-5. Click "Create repository from template"
+1. Create a new GitHub repository:
+   - Go to GitHub and click "New repository"
+   - Name it "a5c-task-manager" (or choose your own name)
+   - Set it to Private or Public
+   - Initialize with a README
 
-#### Option B: Start from Scratch
+2. Clone the repository to your local machine:
 
-1. Create a new repository on GitHub
-2. Clone it to your local machine:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
-3. Set up the A5C configuration manually:
-   ```bash
-   mkdir -p .a5c
-   mkdir -p .github/workflows
-   ```
-
-### 2. Configure A5C
-
-If you used the template, basic configuration is already set up. If you started from scratch:
-
-1. Create `.a5c/config.yml`:
-   ```yaml
-   version: 1.0.0
-   settings:
-     model: claude-3-7-sonnet-20250219
-     verbose: false
-   
-   agents:
-     remote:
-       enabled: true
-       sources:
-         repositories:
-           - uri: "https://github.com/a5c-ai/registry"
-             pattern: "agents/development/*.agent.md"
-   ```
-
-2. Create `.github/workflows/a5c.yml`:
-   ```yaml
-   name: A5C Agent System
-   on:
-     pull_request:
-       types: [opened, synchronize]
-     issues:
-       types: [opened, edited]
-     issue_comment:
-       types: [created]
-     push:
-       branches: [main, develop]
-   
-   jobs:
-     run-agents:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v3
-           with:
-             fetch-depth: 0
-         
-         - name: Run A5C Agents
-           uses: a5c-ai/action@main
-           with:
-             github_token: ${{ secrets.GITHUB_TOKEN }}
-             anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-             config_file: ".a5c/config.yml"
-   ```
-
-### 3. Add Repository Secrets
-
-1. Go to your repository's Settings
-2. Select "Secrets and variables" → "Actions"
-3. Add the following secrets:
-   - `ANTHROPIC_API_KEY`: Your Anthropic API key
-
-## Defining Your Project Requirements
-
-### 1. Update Repository Description
-
-For zero-to-demo template repositories, update your repository description with your project requirements:
-
-> A simple task management API built with Node.js, Express, and MongoDB. Features include user authentication, task CRUD operations, task categorization, and due date management.
-
-### 2. Create Initial Issues (For Manual Setup)
-
-If you're not using the template, create some initial issues to guide development:
-
-1. Create a new issue titled "Project Setup"
-   ```
-   @project-seeder-agent Please initialize a Node.js Express API project with MongoDB integration for a task management system.
-   ```
-
-2. Create a new issue titled "User Authentication"
-   ```
-   @developer-agent Please implement user registration and login using JWT authentication.
-   ```
-
-## Working with Agents
-
-### 1. Issue-Based Development
-
-A5C works best with issue-driven development. Create issues for each feature or task:
-
-```
-@developer-agent Please implement the task creation API endpoint with the following fields:
-- title (string, required)
-- description (string, optional)
-- dueDate (date, optional)
-- category (string, optional)
-- priority (enum: low, medium, high)
-- status (enum: todo, in-progress, completed)
+```bash
+git clone https://github.com/your-username/a5c-task-manager.git
+cd a5c-task-manager
 ```
 
-### 2. Code Reviews
+## Step 2: Set Up A5C Configuration
 
-Request code reviews from the code-review agent:
+1. Create the A5C configuration directory:
 
-```
-@code-review-agent Please review the user authentication implementation in PR #3.
-```
-
-### 3. Bug Fixing
-
-Report and fix bugs using the appropriate agents:
-
-```
-@bug-fixer-agent The task creation endpoint returns 500 when a task with no due date is submitted. Please investigate and fix.
+```bash
+mkdir -p .a5c
 ```
 
-## Implementing a Feature with Agent Assistance
+2. Create a basic `config.yml` file in the `.a5c` directory:
 
-Let's walk through implementing a feature with agent assistance:
+```yaml
+# Basic A5C configuration
+version: 1.0.0
+settings:
+  model: claude-3-7-sonnet-20250219
+  verbose: false
 
-### 1. Create an Issue
-
-Create a new issue titled "Task Categories Management":
-
-```
-@developer-agent We need to implement task categories management with the following requirements:
-
-1. Users should be able to create, read, update, and delete categories
-2. Each category should have:
-   - name (unique per user)
-   - color (hex color code)
-   - description (optional)
-3. Tasks should be able to reference categories by ID
-4. Categories should be user-specific
-
-Please implement the necessary models, routes, and controllers.
+# Agents to use
+agents:
+  remote:
+    enabled: true
+    sources:
+      repositories:
+        - uri: "https://github.com/a5c-ai/registry"
+          pattern: "agents/development/*.agent.md"
 ```
 
-### 2. Agent Implementation
+3. Set up the GitHub workflow file:
 
-The developer agent will:
-1. Analyze the requirements
-2. Create a new branch
-3. Implement the necessary code
-4. Create tests
-5. Create a pull request
+```bash
+mkdir -p .github/workflows
+```
 
-### 3. Review and Merge
+4. Create a `.github/workflows/a5c.yml` file:
 
-1. The code-review agent can be tagged to review the PR
-2. After review, merge the PR to complete the feature
+```yaml
+name: A5C Agent System
+on:
+  pull_request:
+    types: [opened, synchronize]
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+  push:
+    branches: [main, develop]
 
-## Expanding Your Project
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Run A5C Agents
+        uses: a5c-ai/action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          config_file: ".a5c/config.yml"
+```
 
-As your project grows:
+5. Commit and push these files to your repository:
 
-1. **Add specialized agents**: Include security, testing, or documentation agents
-2. **Customize triggers**: Configure agents to respond to specific events or patterns
-3. **Create local agents**: Develop custom agents for project-specific tasks
-4. **Implement CI/CD**: Use A5C agents to manage deployment and integration
+```bash
+git add .a5c .github
+git commit -m "Set up A5C configuration"
+git push
+```
+
+6. Add your `ANTHROPIC_API_KEY` to your repository secrets:
+   - Go to your repository on GitHub
+   - Navigate to Settings → Secrets and variables → Actions
+   - Click "New repository secret"
+   - Name: `ANTHROPIC_API_KEY`
+   - Value: Your Anthropic API key
+   - Click "Add secret"
+
+## Step 3: Initialize the Project
+
+1. Create a new issue in your repository with the following content:
+
+```
+@project-seeder-agent
+
+Please initialize a Node.js Express API project with the following features:
+- Express.js for API routes
+- Simple in-memory task management (no database needed)
+- Basic CRUD operations for tasks (create, read, update, delete)
+- Basic structure with routes, controllers, and models
+- Jest for testing
+```
+
+2. Wait for the project-seeder-agent to respond and initialize your project. This typically takes a few minutes.
+
+3. Once the agent has finished, clone the updated repository:
+
+```bash
+git pull
+```
+
+## Step 4: Implement a New Feature
+
+Now that you have a basic project structure, let's implement a new feature with agent assistance.
+
+1. Create a new feature branch:
+
+```bash
+git checkout -b feature/task-priorities
+```
+
+2. Create a new issue in your repository:
+
+```
+@developer-agent
+
+Please add a priority field to the task model with the following requirements:
+- Priority can be "low", "medium", or "high"
+- Default priority should be "medium"
+- Add validation to ensure only valid priorities are accepted
+- Update relevant controllers and routes to support filtering by priority
+- Add tests for the new functionality
+```
+
+3. Wait for the developer-agent to provide a solution.
+
+4. Review the agent's solution and implement the changes:
+   - Copy the code provided by the agent
+   - Create or modify the necessary files
+   - Commit your changes
+
+```bash
+git add .
+git commit -m "Add task priority functionality"
+git push --set-upstream origin feature/task-priorities
+```
+
+5. Create a pull request:
+   - Go to your repository on GitHub
+   - Click "Compare & pull request"
+   - Add a description of your changes
+   - Click "Create pull request"
+
+6. Mention the code-review-agent in a comment on your pull request:
+
+```
+@code-review-agent Please review this PR for the task priority implementation.
+```
+
+7. Wait for the agent to review your code and provide feedback.
+
+8. Address any feedback from the code-review-agent.
+
+9. Merge your pull request.
+
+## Step 5: Test Your Application
+
+1. Pull the latest changes to your local machine:
+
+```bash
+git checkout main
+git pull
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the tests:
+
+```bash
+npm test
+```
+
+4. Start the application:
+
+```bash
+npm start
+```
+
+5. Test the API endpoints using curl or a tool like Postman:
+
+```bash
+# Create a new task
+curl -X POST http://localhost:3000/api/tasks \
+  -H "Content-Type: application/json" \
+  -d '{"title": "Learn A5C", "description": "Complete the first project tutorial", "priority": "high"}'
+
+# Get all tasks
+curl http://localhost:3000/api/tasks
+
+# Filter tasks by priority
+curl http://localhost:3000/api/tasks?priority=high
+```
+
+## Next Steps
+
+Now that you've completed your first A5C project, you can:
+
+- Learn more about [A5C Agents](../concepts/agents.md) and their capabilities
+- Explore different [trigger mechanisms](../concepts/triggers.md) for agent activation
+- Try creating [custom agents](../tutorials/creating-custom-agents.md) for your specific needs
+- Add more advanced features to your task management API
 
 ## Troubleshooting
 
 If you encounter issues:
 
-1. **Check GitHub Actions logs**: Review action execution details
-2. **Verify agent configuration**: Ensure your config.yml is correct
-3. **Check API key validity**: Ensure your Anthropic API key is valid
-4. **Review agent mentions**: Make sure you're using the correct agent names
+- Check the GitHub Actions logs for error messages
+- Verify your API keys are correctly configured
+- Ensure your mentions of agents use the correct format (e.g., @developer-agent)
+- See the [Troubleshooting Guide](../guides/troubleshooting.md) for common issues and solutions
 
-## Next Steps
-
-Now that you've completed your first project with A5C, you can:
-
-- Learn about [advanced agent configuration](../concepts/configuration.md)
-- Explore [custom agent creation](../guides/creating-custom-agents.md)
-- Understand [MCP server integration](../concepts/mcp.md)
-- Set up [advanced triggers](../concepts/triggers.md)
-
-For more detailed guidance, check out the full [A5C documentation](../index.md).
+> **Tip**: Always provide clear, specific instructions when communicating with agents. The more context you provide, the better the agent can assist you.
