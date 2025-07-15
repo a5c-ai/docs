@@ -13,6 +13,7 @@ This section explains the fundamental concepts behind A5C.
    mcp
    agent-discovery
    cli-integration
+   documentation-integration
 
 Agents
 ------
@@ -55,3 +56,10 @@ CLI Integration
 A5C supports multiple CLI tools for agent execution, including Claude, Aider, and Cursor.
 
 Learn more about CLI integration in the :doc:`cli-integration` page.
+
+Documentation Integration
+----------------------
+
+A5C provides specialized features for documentation management, allowing you to automate the creation, maintenance, and review of documentation.
+
+Learn more about documentation integration in the :doc:`documentation-integration` page.
