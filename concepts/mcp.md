@@ -408,5 +408,5 @@ Common MCP issues and their solutions:
 
 - Learn about [agent discovery](agent-discovery.md) for agent collaboration
 - Explore [CLI integration](cli-integration.md) for command-line tools
-- See [integrating custom MCP servers](../guides/integrating-custom-mcp-servers.md) for custom integrations
+- See [implementing custom MCP servers](../tutorials/implementing-custom-mcp-servers.md) for custom integrations
 - Understand [agent configuration](configuration.md) for MCP settings

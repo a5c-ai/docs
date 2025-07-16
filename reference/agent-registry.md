@@ -318,7 +318,7 @@ Agents can collaborate through the following mechanisms:
 
 ## Related Resources
 
-- [Agent Development Guide](/guides/creating-custom-agents)
+- [Agent Development Guide](/tutorials/creating-custom-agents)
 - [Agent Protocol Specification](/architecture/agent-protocol)
 - [Agent Interactions](/concepts/agent-discovery)
 - [Deploying Custom Agents](/guides/deploying-agents)
