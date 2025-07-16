@@ -1,6 +1,6 @@
 # Configuration Options
 
-This page provides a comprehensive reference for all configuration options available in A5C. Configuration plays a crucial role in customizing agent behavior, setting up triggers, and defining system integration points.
+This page provides a comprehensive reference for all configuration options available in A5C (Agent-based Automated Code Collaboration). Configuration plays a crucial role in customizing agent behavior, setting up triggers, and defining system integration points.
 
 ## Configuration Files
 
@@ -145,6 +145,8 @@ A5C also supports configuration through environment variables:
 
 ## Configuration Best Practices
 
+> **Warning**: Never store sensitive information such as API keys or tokens directly in configuration files. Always use environment variables or secure secret management systems.
+
 - Store sensitive information (tokens, keys) in environment variables, not in configuration files
 - Use version control for configuration files to track changes
 - Implement the principle of least privilege when configuring agent permissions
@@ -153,7 +155,7 @@ A5C also supports configuration through environment variables:
 
 ## Related Resources
 
-- [Configuration Guide](/guides/configuration): Step-by-step guide to configuring A5C
-- [Agent Setup](/guides/setting-up-agents): How to set up and configure agents
-- [Trigger Configuration](/guides/configuring-triggers): Detailed guide for trigger setup
-- [MCP Configuration](/guides/using-mcp-servers): How to configure and use MCP servers
+- [Configuration Guide](/guides/configuration) (Coming soon): Step-by-step guide to configuring A5C
+- [Agent Setup](/guides/setting-up-agents) (Coming soon): How to set up and configure agents
+- [Trigger Configuration](/guides/configuring-triggers) (Coming soon): Detailed guide for trigger setup
+- [MCP Configuration](/guides/using-mcp-servers) (Coming soon): How to configure and use MCP servers

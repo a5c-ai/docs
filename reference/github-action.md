@@ -1,6 +1,6 @@
 # GitHub Action
 
-This page provides comprehensive reference documentation for the A5C GitHub Action. The action enables seamless integration of A5C with GitHub repositories, workflows, and events.
+This page provides comprehensive reference documentation for the A5C (Agent-based Automated Code Collaboration) GitHub Action. The action enables seamless integration of A5C with GitHub repositories, workflows, and events.
 
 ## Overview
 
@@ -195,6 +195,8 @@ Run A5C in custom CI environments:
 
 ## Using with Matrix Strategy
 
+> **Tip**: For complex repositories with different agent needs across multiple parts of the codebase, use GitHub's matrix strategy to run different agent configurations in parallel.
+
 Run A5C for multiple configurations using GitHub's matrix strategy:
 
 ```yaml
@@ -336,8 +338,8 @@ jobs:
 
 ## Related Resources
 
-- [GitHub Actions Setup Guide](/getting-started/github-integration)
-- [CI/CD Integration](/guides/cicd-integration)
-- [A5C Security Best Practices](/guides/security-best-practices)
-- [Customizing A5C Workflows](/guides/custom-workflows)
-- [Event-Driven Agent Activation](/concepts/triggers)
+- [GitHub Actions Setup Guide](/getting-started/github-integration) (Coming soon)
+- [CI/CD Integration](/guides/cicd-integration) (Coming soon)
+- [A5C Security Best Practices](/guides/security-best-practices) (Coming soon)
+- [Customizing A5C Workflows](/guides/custom-workflows) (Coming soon)
+- [Event-Driven Agent Activation](/concepts/triggers) (Coming soon)

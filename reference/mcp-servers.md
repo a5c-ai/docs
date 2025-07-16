@@ -1,10 +1,10 @@
 # MCP Servers
 
-This page provides comprehensive reference documentation for Model Control Protocol (MCP) servers in A5C. MCP servers manage AI model access, provide shared memory, and enable advanced agent capabilities.
+This page provides comprehensive reference documentation for Model Context Protocol (MCP) servers in A5C (Agent-based Automated Code Collaboration). MCP servers manage AI model access, provide shared memory, and enable advanced agent capabilities.
 
 ## What are MCP Servers?
 
-Model Control Protocol (MCP) servers act as intermediaries between A5C agents and AI models. They provide:
+Model Context Protocol (MCP) servers act as intermediaries between A5C agents and AI models. They provide:
 
 1. **Centralized Model Access**: Unified interface to AI models (OpenAI, Anthropic, etc.)
 2. **Shared Memory**: Persistent storage accessible to all agents
@@ -208,6 +208,8 @@ curl -X POST https://mcp.example.com/v1/chat \
 
 ## Custom MCP Servers
 
+> **Note**: Custom MCP servers are recommended only for advanced use cases where the built-in servers don't meet your specific requirements.
+
 You can implement custom MCP servers for specialized needs.
 
 ### Implementation Requirements
@@ -299,8 +301,8 @@ Access metrics via the `/metrics` endpoint (Prometheus format).
 
 ## Related Resources
 
-- [MCP Server Setup Guide](/guides/using-mcp-servers)
-- [Custom MCP Implementation](/guides/custom-mcp-servers)
-- [MCP API Specification](/architecture/mcp-protocol)
-- [Memory Management](/concepts/mcp-memory)
-- [MCP Security](/guides/securing-mcp)
+- [MCP Server Setup Guide](/guides/using-mcp-servers) (Coming soon)
+- [Custom MCP Implementation](/guides/custom-mcp-servers) (Coming soon)
+- [MCP API Specification](/architecture/mcp-protocol) (Coming soon)
+- [Memory Management](/concepts/mcp-memory) (Coming soon)
+- [MCP Security](/guides/securing-mcp) (Coming soon)
