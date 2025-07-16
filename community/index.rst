@@ -8,6 +8,7 @@ This section provides information for the A5C community, including contributing 
    :caption: Contents:
 
    contributing
+   content-writer-guidelines
    roadmap
    support
    faq
@@ -18,6 +19,13 @@ Contributing
 Guidelines for contributing to A5C development.
 
 See the :doc:`contributing` page for contribution processes and standards.
+
+Content Writer Guidelines
+---------------------
+
+Specific guidelines for content writers and documentation contributors.
+
+See the :doc:`content-writer-guidelines` page for detailed instructions on creating effective A5C documentation.
 
 Roadmap
 ------
