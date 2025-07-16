@@ -1,6 +1,6 @@
 # Agent Registry
 
-This page provides comprehensive reference documentation for all available agents in the A5C registry. Each agent has specific capabilities, triggers, and configuration options.
+This page provides comprehensive reference documentation for all available agents in the A5C (Agent-based Automated Code Collaboration) registry. Each agent has specific capabilities, triggers, and configuration options.
 
 ## Core Agents
 
@@ -263,6 +263,8 @@ cost_optimization: true
 
 ## Custom Agent Development
 
+> **Warning**: Custom agents have full access to your repository based on their configured permissions. Always review the code of any custom agent before deployment, especially from third-party sources.
+
 A5C supports creating custom agents for specialized tasks. Custom agents must follow the A5C agent protocol and implement required interfaces.
 
 ### Agent Structure
@@ -318,7 +320,7 @@ Agents can collaborate through the following mechanisms:
 
 ## Related Resources
 
-- [Agent Development Guide](/guides/creating-custom-agents)
-- [Agent Protocol Specification](/architecture/agent-protocol)
-- [Agent Interactions](/concepts/agent-discovery)
-- [Deploying Custom Agents](/guides/deploying-agents)
+- [Agent Development Guide](/guides/creating-custom-agents) (Coming soon)
+- [Agent Protocol Specification](/architecture/agent-protocol) (Coming soon)
+- [Agent Interactions](/concepts/agent-discovery) (Coming soon)
+- [Deploying Custom Agents](/guides/deploying-agents) (Coming soon)

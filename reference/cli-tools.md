@@ -1,12 +1,14 @@
 # CLI Tools
 
-This page provides comprehensive reference documentation for Command Line Interface (CLI) tools supported by A5C. These tools enable efficient management, configuration, and interaction with A5C components from the terminal.
+This page provides comprehensive reference documentation for Command Line Interface (CLI) tools supported by A5C (Agent-based Automated Code Collaboration). These tools enable efficient management, configuration, and interaction with A5C components from the terminal.
 
 ## Core CLI Commands
 
 A5C provides a primary command-line tool (`a5c`) with various subcommands for different operations.
 
 ### Installation
+
+> **Note**: Ensure you have Node.js version 14 or higher installed before installing the A5C CLI tools.
 
 ```bash
 # Install globally via npm
@@ -519,7 +521,7 @@ A5C CLI tools respect the following environment variables:
 
 ## Related Resources
 
-- [CLI Installation Guide](/getting-started/installation#cli-installation)
-- [CLI Usage Tutorial](/tutorials/cli-basics)
-- [Automating A5C with CLI](/guides/cli-automation)
-- [Custom CLI Plugin Development](/guides/custom-cli-plugins)
+- [CLI Installation Guide](/getting-started/installation#cli-installation) (Coming soon)
+- [CLI Usage Tutorial](/tutorials/cli-basics) (Coming soon)
+- [Automating A5C with CLI](/guides/cli-automation) (Coming soon)
+- [Custom CLI Plugin Development](/guides/custom-cli-plugins) (Coming soon)
