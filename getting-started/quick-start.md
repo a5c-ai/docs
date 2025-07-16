@@ -85,13 +85,20 @@ Create a `.github/workflows/a5c.yml` file:
 name: A5C Agent System
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened, closed]
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
   issue_comment:
-    types: [created]
+    types: [created, edited]
   push:
-    branches: [main, develop]
+    branches: [main, develop, master]
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:
+    inputs:
+      agent_uri:
+        description: 'Specific agent to run'
+        required: false
 
 jobs:
   run-agents:
@@ -109,6 +116,8 @@ jobs:
           config_file: ".a5c/config.yml"
 ```
 
+> **Note**: This configuration includes all supported trigger types. You can customize it based on your specific needs.
+
 ### 3. Add Repository Secrets
 
 Add your `ANTHROPIC_API_KEY` to your repository's secrets.
@@ -121,7 +130,7 @@ Create a new issue with "@developer-agent Hello world" to test if your setup is 
 
 Now that you have A5C set up, you can:
 
-- Learn about [different agent types](../concepts/agents.md)
-- Understand [how to configure triggers](../concepts/triggers.md)
-- See how to [customize agent behavior](../guides/customizing-agent-behavior.md)
+- Learn about different agent types in the [A5C Registry](https://github.com/a5c-ai/registry)
+- Understand GitHub Action triggers as shown in the [Action Configuration](#2-set-up-github-action) above
+- See the [A5C GitHub Action repository](https://github.com/a5c-ai/action) for more configuration options
 - Follow our [first project tutorial](first-project.md) for a guided experience

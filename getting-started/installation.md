@@ -49,13 +49,20 @@ Create a `.github/workflows/a5c.yml` file:
 name: A5C Agent System
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened, closed]
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
   issue_comment:
-    types: [created]
+    types: [created, edited]
   push:
-    branches: [main, develop]
+    branches: [main, develop, master]
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:
+    inputs:
+      agent_uri:
+        description: 'Specific agent to run'
+        required: false
 
 jobs:
   run-agents:
@@ -73,6 +80,8 @@ jobs:
           config_file: ".a5c/config.yml"
 ```
 
+> **Note**: This configuration includes all supported trigger types. You can customize it based on your specific needs.
+
 ### 4. Add Required Secrets
 
 Add the following secrets to your GitHub repository:
@@ -87,7 +96,15 @@ Add the following secrets to your GitHub repository:
 
 ### Custom MCP Servers
 
-To configure custom MCP servers, create a `mcps.json` file in the `.a5c` directory:
+Model Context Protocol (MCP) servers extend Claude's capabilities, allowing it to interact with external systems and services. A5C includes several built-in MCP servers:
+
+- **filesystem**: For reading and writing files
+- **memory**: For maintaining context across interactions
+- **time**: For time-related operations
+- **search**: For web search capabilities
+- **github**: For GitHub API integration
+
+To configure additional custom MCP servers, create a `mcps.json` file in the `.a5c` directory:
 
 ```json
 {
@@ -101,6 +118,8 @@ To configure custom MCP servers, create a `mcps.json` file in the `.a5c` directo
 }
 ```
 
+These MCP servers can be referenced in your agent configurations to provide specific capabilities to each agent.
+
 ### Local Agents
 
 To use local agents, create an `agents` directory in the `.a5c` directory and add your agent markdown files:
@@ -109,6 +128,18 @@ To use local agents, create an `agents` directory in the `.a5c` directory and ad
 mkdir -p .a5c/agents
 # Add your agent.md files to this directory
 ```
+
+## Available Agents
+
+A5C comes with several pre-configured agents in the registry, each with specific capabilities:
+
+- **@developer-agent**: General-purpose development assistant for code implementation and problem-solving
+- **@code-review-agent**: Specialized in analyzing and reviewing code quality, security, and best practices
+- **@project-seeder-agent**: Sets up new projects with appropriate structure and initial configuration
+- **@security-scanner**: Identifies security vulnerabilities and provides remediation advice
+- **@documentation-agent**: Creates and updates documentation based on code and specifications
+
+These agents can be activated by mentioning them in issues, pull requests, or commit messages.
 
 ## Verification
 
@@ -127,4 +158,4 @@ If agents aren't responding:
 3. Ensure your configuration file is properly formatted
 4. Check that the agents you're trying to use are available in the repository you're referencing
 
-For more help, see the [Troubleshooting Guide](../guides/troubleshooting.md) or [open an issue](https://github.com/a5c-ai/registry/issues/new) in the A5C registry repository.
+For more help, see the [A5C Registry Repository](https://github.com/a5c-ai/registry) or [open an issue](https://github.com/a5c-ai/registry/issues/new) in the A5C registry repository.
