@@ -29,7 +29,7 @@ A5C provides agents with access to GitHub's API for various operations:
 
 #### Repository Operations
 
-- Clone repositories
+- Repository access (clone, push, pull)
 - Create, read, update, and delete files
 - Create branches and tags
 - Manage repository settings
@@ -40,7 +40,7 @@ A5C provides agents with access to GitHub's API for various operations:
 - Create, update, and close issues
 - Create, update, and merge pull requests
 - Add labels, assignees, and reviewers
-- Add comments and reviews
+- Comment handling
 - Manage project boards
 
 #### GitHub Actions Integration
@@ -229,6 +229,7 @@ A5C implements several security measures for integrations:
 Integrations are configured in the `.a5c/config.yml` file:
 
 ```yaml
+# Integration Configuration
 integrations:
   github:
     type: github_app

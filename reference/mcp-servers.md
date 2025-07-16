@@ -1,10 +1,10 @@
 # MCP Servers
 
-This page provides comprehensive reference documentation for Model Control Protocol (MCP) servers in A5C. MCP servers manage AI model access, provide shared memory, and enable advanced agent capabilities.
+This page provides comprehensive reference documentation for Model Context Protocol (MCP) servers in A5C. MCP servers manage AI model access, provide shared memory, and enable advanced agent capabilities.
 
 ## What are MCP Servers?
 
-Model Control Protocol (MCP) servers act as intermediaries between A5C agents and AI models. They provide:
+Model Context Protocol (MCP) servers act as intermediaries between A5C agents and AI models. They provide:
 
 1. **Centralized Model Access**: Unified interface to AI models (OpenAI, Anthropic, etc.)
 2. **Shared Memory**: Persistent storage accessible to all agents
@@ -171,39 +171,18 @@ mcp:
 
 All MCP servers implement a standard API for agent interaction:
 
-### Core Endpoints
+### API Overview
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/v1/completions` | POST | Generate text completions |
-| `/v1/chat` | POST | Generate chat completions |
-| `/v1/embeddings` | POST | Generate vector embeddings |
-| `/v1/memory/{key}` | GET | Retrieve memory by key |
-| `/v1/memory` | POST | Store data in memory |
-| `/v1/tools` | GET | List available tools |
-| `/v1/tools/{tool_id}` | POST | Execute a tool |
+MCP servers provide a standardized API for agent interactions. This API includes endpoints for:
+
+- Model completions and chat interactions
+- Vector embeddings generation
+- Memory storage and retrieval
+- Tool discovery and execution
 
 ### Authentication
 
-Authenticate with MCP servers using one of the following methods:
-
-1. **API Key**: Include `x-api-key` header with your API key
-2. **JWT**: Include `Authorization: Bearer {token}` header
-3. **OAuth2**: Use standard OAuth2 flow for authentication
-
-Example:
-
-```bash
-curl -X POST https://mcp.example.com/v1/chat \
-  -H "Content-Type: application/json" \
-  -H "x-api-key: YOUR_API_KEY" \
-  -d '{
-    "model": "gpt-4",
-    "messages": [
-      {"role": "system", "content": "You are a helpful assistant."},
-      {"role": "user", "content": "Hello, world!"}
-    ]
-  }'
+MCP servers support various authentication methods based on your deployment configuration. Consult your specific MCP server documentation for authentication requirements.
 ```
 
 ## Custom MCP Servers
@@ -245,19 +224,12 @@ MCP servers provide shared memory storage for agents:
 
 ### Memory Operations
 
-```python
-# Store data
-await mcp.memory.set("key", {"data": "value"}, ttl=3600)
+MCP servers provide a consistent interface for memory operations including:
 
-# Retrieve data
-data = await mcp.memory.get("key")
-
-# Store with vector embedding
-await mcp.memory.set_vector("document1", "This is a document about AI", ttl=86400)
-
-# Semantic search
-results = await mcp.memory.search_vector("AI concepts", limit=5)
-```
+- Storing and retrieving key-value data
+- Managing time-to-live (TTL) for stored information
+- Vector storage for semantic search capabilities
+- Structured data management
 
 ## Security Best Practices
 
