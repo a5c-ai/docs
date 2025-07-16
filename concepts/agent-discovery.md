@@ -377,4 +377,4 @@ Common issues and their solutions:
 - Learn about [CLI integration](cli-integration.md) for command-line tools
 - Explore [agent configuration](configuration.md) for discovery settings
 - Understand [Model Context Protocol](mcp.md) for agent communication
-- See [configuring agent collaboration](../guides/configuring-agent-collaboration.md) for practical examples
+- See the [A5C Registry Repository](https://github.com/a5c-ai/registry) for practical examples of agent collaboration

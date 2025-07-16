@@ -318,7 +318,6 @@ Agents can collaborate through the following mechanisms:
 
 ## Related Resources
 
-- [Agent Development Guide](/guides/creating-custom-agents)
-- [Agent Protocol Specification](/architecture/agent-protocol)
+- [A5C Registry Repository](https://github.com/a5c-ai/registry)
 - [Agent Interactions](/concepts/agent-discovery)
-- [Deploying Custom Agents](/guides/deploying-agents)
+- [A5C GitHub Action Repository](https://github.com/a5c-ai/action)

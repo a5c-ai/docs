@@ -178,5 +178,5 @@ A5C enables several documentation automation opportunities:
 ## Next Steps
 
 - Learn about [agent configuration](configuration.md) for documentation projects
-- Explore [customizing agent behavior](../guides/customizing-agent-behavior.md)
+- Explore the [A5C Registry Repository](https://github.com/a5c-ai/registry) for agent configuration
 - See [content creation workflows](../guides/content-creation-workflows.md) for practical examples
