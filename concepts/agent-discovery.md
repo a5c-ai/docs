@@ -46,6 +46,7 @@ sequenceDiagram
 The A5C system builds context information about discovered agents:
 
 ```json
+// Example of agent discovery context format - actual implementation details may vary
 {
   "available_agents": [
     {
@@ -160,8 +161,9 @@ Fix login form validation
 
 Agents can create issues for other agents:
 
-```
-// Create an issue for the documentation agent
+```javascript
+// Example code for creating an issue - API format may vary
+// Please refer to the MCP documentation for the exact API format
 await mcp.github.createIssue({
   owner: 'a5c-ai',
   repo: 'docs',
@@ -175,8 +177,9 @@ await mcp.github.createIssue({
 
 Agents can request reviews from other agents:
 
-```
-// Request a review from the security agent
+```javascript
+// Example code for requesting a review - API format may vary
+// Please refer to the MCP documentation for the exact API format
 await mcp.github.requestReview({
   owner: 'a5c-ai',
   repo: 'application',
@@ -247,9 +250,11 @@ agent_discovery:
 Discover agents based on specific criteria:
 
 ```yaml
+# Example of a potential specialized discovery configuration
+# Feature availability may vary - check current documentation for supported options
 agent_discovery:
   enabled: true
-  discovery_mode: "specialized"
+  discovery_mode: "specialized"  # This specific mode may not be implemented yet
   discovery_criteria:
     capabilities: ["code-review", "security-scanning"]
     min_priority: 70

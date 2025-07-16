@@ -219,7 +219,8 @@ A5C supports dynamic configuration that can change based on runtime conditions:
 ### Context-based Configuration
 
 ```yaml
-# Dynamic configuration based on context
+# Example of potential dynamic configuration - feature availability may vary
+# Check the current documentation for supported dynamic configuration options
 context_rules:
   - condition: "event.type == 'pull_request' && event.action == 'opened'"
     settings:
@@ -233,7 +234,8 @@ context_rules:
 ### Feature Flags
 
 ```yaml
-# Feature flags for experimental features
+# Example of potential feature flags - feature availability may vary
+# Check the current documentation for supported feature flags
 features:
   enhanced_code_review: true
   security_scanning: false
@@ -246,7 +248,7 @@ When upgrading A5C, configuration migration may be necessary:
 
 1. Check the migration guide for your target version
 2. Back up your existing configuration files
-3. Use the `a5c config migrate` command to automatically update your configuration
+3. Use the migration tools provided in the documentation to update your configuration (specific commands may vary)
 4. Review the changes and adjust as needed
 5. Test with a limited set of agents before full deployment
 

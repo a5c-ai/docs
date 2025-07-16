@@ -15,7 +15,7 @@ Event-based triggers activate agents in response to GitHub events.
 events: ["push", "pull_request.opened", "issues.labeled"]
 ```
 
-**Supported Events:**
+**Commonly Supported Events:**
 - `push`: When code is pushed to the repository
 - `pull_request`: When pull request actions occur
   - `.opened`: When a PR is first opened
@@ -30,6 +30,8 @@ events: ["push", "pull_request.opened", "issues.labeled"]
   - `.created`: When a new comment is added
   - `.edited`: When a comment is edited
 - `schedule`: Time-based trigger (used with `activation_cron`)
+
+> **Note**: Check the current A5C documentation for the complete list of supported events as they may change with updates.
 
 ### 2. Mention-based Triggers
 
