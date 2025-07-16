@@ -127,8 +127,10 @@ Create and manage different media types:
 
 - **video-generation-agent**: Video content
 - **image-generation-agent**: Image creation
-- **music-generation-agent**: Music composition
-- **speech-generation-agent**: Audio generation
+
+<!-- Note: The following agents may not be currently implemented and represent potential future capabilities -->
+<!-- - **music-generation-agent**: Music composition -->
+<!-- - **speech-generation-agent**: Audio generation -->
 
 ### News Agents
 

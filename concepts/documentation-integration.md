@@ -18,6 +18,8 @@ The A5C configuration for documentation projects typically includes the followin
 ### Agent Configuration
 
 ```yaml
+# Example configuration - exact implementation details may vary
+# Check the current documentation for supported remote agent configuration
 remote_agents:
   enabled: true
   cache_timeout: 120  # Cache timeout in minutes (2 hours)
@@ -167,13 +169,15 @@ When using A5C for documentation management:
 
 ## Automation Opportunities
 
-A5C enables several documentation automation opportunities:
+A5C may enable several documentation automation opportunities (some may be aspirational or in development):
 
 - **Auto-generate API documentation** from code changes
 - **Schedule regular documentation reviews**
 - **Automatically fix common documentation issues**
 - **Create documentation templates** for new features
 - **Synchronize documentation across multiple languages**
+
+> **Note**: Check the current A5C documentation to verify which of these features are currently implemented.
 
 ## Next Steps
 

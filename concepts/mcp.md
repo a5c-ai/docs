@@ -40,7 +40,8 @@ MCP servers provide specific capabilities and respond to agent requests. A5C inc
 
 The protocol defines the message format and communication patterns between clients and servers:
 
-```
+```json
+// Example protocol request format - implementation details may vary
 {
   "request": {
     "tool": "filesystem",
@@ -52,7 +53,8 @@ The protocol defines the message format and communication patterns between clien
 }
 ```
 
-```
+```json
+// Example protocol response format - implementation details may vary
 {
   "response": {
     "status": "success",
@@ -82,7 +84,10 @@ Provides access to GitHub APIs and repository operations.
 - Repository statistics
 
 **Example usage:**
-```
+```javascript
+// Example GitHub MCP usage - API may vary
+// Check current MCP documentation for exact API format
+
 // Read a file from GitHub
 const content = await mcp.github.getFileContent({
   owner: 'a5c-ai',
@@ -111,7 +116,10 @@ Provides access to the local file system with appropriate permissions.
 - File watching for changes
 
 **Example usage:**
-```
+```javascript
+// Example Filesystem MCP usage - API may vary
+// Check current MCP documentation for exact API format
+
 // Read a file
 const content = await mcp.filesystem.readFile({
   path: '/path/to/file.txt'
@@ -142,7 +150,10 @@ Provides persistent and shared memory storage for agents.
 - Memory search and querying
 
 **Example usage:**
-```
+```javascript
+// Example Memory MCP usage - API may vary
+// Check current MCP documentation for exact API format
+
 // Store a value
 await mcp.memory.set({
   key: 'last_execution',
@@ -174,7 +185,10 @@ Analyzes code for security vulnerabilities.
 - Container scanning
 
 **Example usage:**
-```
+```javascript
+// Example Security Scanner MCP usage - API may vary
+// Check current MCP documentation for exact API format
+
 // Scan a file for vulnerabilities
 const results = await mcp.securityScanner.scanFile({
   path: 'src/login.js',
@@ -200,7 +214,10 @@ Provides code analysis and understanding capabilities.
 - Code structure analysis
 
 **Example usage:**
-```
+```javascript
+// Example Code Analysis MCP usage - API may vary
+// Check current MCP documentation for exact API format
+
 // Analyze code structure
 const structure = await mcp.codeAnalysis.analyzeStructure({
   path: 'src/component.js'
@@ -271,6 +288,8 @@ export interface McpServer {
 ### 2. Implement the Server
 
 ```typescript
+// Example custom MCP server implementation - API may vary
+// Check current MCP documentation for exact API format
 // custom-database-mcp.ts
 import { McpServer, McpRequest, McpResponse } from './mcp-server.interface';
 
@@ -302,7 +321,7 @@ export class CustomDatabaseMcp implements McpServer {
     await this.connection.close();
   }
   
-  // Implementation of specific handlers...
+  // Implementation of specific handlers would go here
 }
 ```
 
@@ -340,7 +359,8 @@ MCP includes a comprehensive security model:
 MCP servers implement a permission system that controls what actions agents can perform:
 
 ```yaml
-# Permission configuration
+# Example permission configuration - implementation details may vary
+# Check current MCP documentation for supported permission formats
 permissions:
   filesystem:
     read: ["src/**", "docs/**"]
