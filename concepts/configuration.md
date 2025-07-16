@@ -255,4 +255,4 @@ When upgrading A5C, configuration migration may be necessary:
 - Learn about [Model Context Protocol](mcp.md)
 - Understand [agent discovery](agent-discovery.md)
 - Explore [CLI integration](cli-integration.md)
-- See [customizing agent behavior](../guides/customizing-agent-behavior.md) for practical examples
+- See the [A5C Registry Repository](https://github.com/a5c-ai/registry) for agent configuration examples

@@ -223,7 +223,7 @@ To create a custom agent:
 3. Write the prompt instructions for the agent
 4. Add the agent to your `.a5c/config.yml` file
 
-For a detailed guide on creating custom agents, see the [Creating Custom Agents](../guides/creating-custom-agents.md) guide.
+For a detailed guide on creating custom agents, see the [A5C Registry Repository](https://github.com/a5c-ai/registry) for examples.
 
 ## Best Practices
 

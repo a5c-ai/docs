@@ -1,6 +1,6 @@
 # System Overview
 
-This document provides a high-level overview of the A5C (Agent-based Continuous Code Creation) system architecture.
+This document provides a high-level overview of the A5C (agentic) system architecture.
 
 ## Architectural Philosophy
 

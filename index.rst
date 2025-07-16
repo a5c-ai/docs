@@ -1,7 +1,7 @@
 Welcome to A5C Documentation
 ==========================
 
-A5C (Agent-based Continuous Code Creation) is an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management. It integrates with GitHub through GitHub Actions to provide continuous, automated assistance.
+A5C (agentic) is an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management. It integrates with GitHub through GitHub Actions to provide continuous, automated assistance.
 
 .. toctree::
    :maxdepth: 2

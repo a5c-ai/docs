@@ -157,5 +157,5 @@ When configuring triggers:
 ## Next Steps
 
 - Learn about [agent configuration](configuration.md)
-- Understand how to [customize agent behavior](../guides/customizing-agent-behavior.md)
-- See [configuring triggers](../guides/configuring-triggers.md) for practical examples
+- See the [A5C Registry Repository](https://github.com/a5c-ai/registry) for agent configuration examples
+- Check the [A5C GitHub Action](https://github.com/a5c-ai/action) for trigger configuration examples

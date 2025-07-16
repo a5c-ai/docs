@@ -1,6 +1,6 @@
 # A5C Documentation
 
-This repository contains the official documentation for A5C (Agent-based Continuous Code Creation), an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management.
+This repository contains the official documentation for A5C (agentic), an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management.
 
 ## Documentation Structure
 
