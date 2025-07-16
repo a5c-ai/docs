@@ -21,3 +21,11 @@ python:
    install:
    - requirements: requirements.txt
         
+theme:
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+    - rust
+    - javascript
