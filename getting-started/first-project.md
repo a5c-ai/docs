@@ -75,13 +75,20 @@ mkdir -p .github/workflows
 name: A5C Agent System
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened, closed]
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
   issue_comment:
-    types: [created]
+    types: [created, edited]
   push:
-    branches: [main, develop]
+    branches: [main, develop, master]
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:
+    inputs:
+      agent_uri:
+        description: 'Specific agent to run'
+        required: false
 
 jobs:
   run-agents:
@@ -98,6 +105,8 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           config_file: ".a5c/config.yml"
 ```
+
+> **Note**: This configuration includes all supported trigger types. You can customize it based on your specific needs.
 
 5. Commit and push these files to your repository:
 
@@ -238,9 +247,9 @@ curl http://localhost:3000/api/tasks?priority=high
 
 Now that you've completed your first A5C project, you can:
 
-- Learn more about [A5C Agents](../concepts/agents.md) and their capabilities
-- Explore different [trigger mechanisms](../concepts/triggers.md) for agent activation
-- Try creating [custom agents](../tutorials/creating-custom-agents.md) for your specific needs
+- Learn more about A5C Agents and their capabilities in the [A5C Registry Repository](https://github.com/a5c-ai/registry)
+- Explore different trigger mechanisms for agent activation in the [A5C GitHub Action documentation](https://github.com/a5c-ai/action)
+- Try creating custom agents by following examples in the [A5C Registry](https://github.com/a5c-ai/registry)
 - Add more advanced features to your task management API
 
 ## Troubleshooting
@@ -250,6 +259,6 @@ If you encounter issues:
 - Check the GitHub Actions logs for error messages
 - Verify your API keys are correctly configured
 - Ensure your mentions of agents use the correct format (e.g., @developer-agent)
-- See the [Troubleshooting Guide](../guides/troubleshooting.md) for common issues and solutions
+- See the [A5C GitHub Action repository](https://github.com/a5c-ai/action) for common issues and solutions
 
 > **Tip**: Always provide clear, specific instructions when communicating with agents. The more context you provide, the better the agent can assist you.
