@@ -130,13 +130,13 @@ The Agent Runtime provides the execution environment for individual agents.
 | Option | Description | Default |
 |--------|-------------|---------|
 | `execution_mode` | Execution isolation level | `container` |
-| `memory_limit` | Maximum memory allocation | `4GB` |
+| `memory_limit` | Maximum memory allocation | Configurable |
 | `execution_timeout` | Maximum execution time per agent | `30` (minutes) |
 | `tool_permissions` | Allowed tools and capabilities | Agent-dependent |
 
 ## 4. MCP Servers
 
-MCP (Memory, Communication, Persistence) Servers provide shared state and context across agent activations.
+MCP (Model Context Protocol) Servers provide shared state and context across agent activations.
 
 ### Responsibilities
 

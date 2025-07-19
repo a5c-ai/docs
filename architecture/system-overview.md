@@ -16,8 +16,6 @@ A5C follows a distributed agent-based architecture designed for:
 
 The A5C system consists of these primary components:
 
-![A5C System Architecture](/images/a5c-system-architecture.png)
-
 ### 1. GitHub Action Runner
 
 - Entry point for GitHub-triggered events
@@ -34,12 +32,13 @@ The A5C system consists of these primary components:
 
 ### 3. Agent Runtime
 
-- Executes agent operations in isolated environments
-- Provides access to tools and APIs
-- Maintains security boundaries between agents
-- Handles agent lifecycle management
+- Executes agent instructions
+- Manages agent lifecycle
+- Provides tool access in isolated environments
+- Maintains execution context
+- Handles agent output processing
 
-### 4. MCP (Memory, Communication, Persistence) Servers
+### 4. MCP (Model Context Protocol) Servers
 
 - Provides shared state and memory across agent activations
 - Enables inter-agent communication

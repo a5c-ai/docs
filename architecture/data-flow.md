@@ -6,8 +6,6 @@ This document explains how data flows through the A5C system, including key proc
 
 The A5C system processes data through a series of coordinated steps, transforming GitHub events into agent actions and system responses.
 
-![A5C Data Flow Diagram](/images/a5c-data-flow.png)
-
 ## Core Data Paths
 
 ### 1. Event Ingestion Flow
