@@ -1,17 +1,17 @@
 # Components
 
-This document provides detailed documentation for each component in the A5C system architecture.
+This document provides detailed documentation for each component in the a5c system architecture.
 
 ## 1. GitHub Action Runner
 
-The GitHub Action Runner serves as the primary entry point for A5C system integration with GitHub.
+The GitHub Action Runner serves as the primary entry point for a5c system integration with GitHub.
 
 ### Responsibilities
 
 - Process GitHub webhook events
 - Authenticate and authorize actions
 - Parse and normalize event payloads
-- Initialize the A5C execution environment
+- Initialize the a5c execution environment
 - Dispatch events to the Agent Dispatcher
 
 ### Key Features
@@ -329,4 +329,4 @@ For more information about how these components work together:
 
 - [System Overview](system-overview.md) - High-level architecture overview
 - [Data Flow](data-flow.md) - How information moves through the system
-- [Integration Points](integration-points.md) - How A5C connects with external systems
+- [Integration Points](integration-points.md) - How a5c connects with external systems

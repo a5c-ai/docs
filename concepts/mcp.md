@@ -1,6 +1,6 @@
 # MCP (Model Context Protocol)
 
-The Model Context Protocol (MCP) enables A5C agents to interact with external services and tools. This page explains MCP concepts, built-in servers, and integration options.
+The Model Context Protocol (MCP) enables a5c agents to interact with external services and tools. This page explains MCP concepts, built-in servers, and integration options.
 
 ## What is MCP?
 
@@ -34,7 +34,7 @@ MCP clients are embedded within agents and provide interfaces to access MCP serv
 
 ### 2. MCP Servers
 
-MCP servers provide specific capabilities and respond to agent requests. A5C includes built-in MCP servers for common operations.
+MCP servers provide specific capabilities and respond to agent requests. a5c includes built-in MCP servers for common operations.
 
 ### 3. MCP Protocol
 
@@ -67,7 +67,7 @@ The protocol defines the message format and communication patterns between clien
 
 ## Built-in MCP Servers
 
-A5C includes several built-in MCP servers:
+a5c includes several built-in MCP servers:
 
 ### 1. GitHub MCP Server
 
@@ -317,7 +317,7 @@ import { CustomDatabaseMcp } from './custom-database-mcp';
 McpRegistry.register(new CustomDatabaseMcp());
 ```
 
-### 4. Configure in A5C
+### 4. Configure in a5c
 
 ```yaml
 # .a5c/config.yml

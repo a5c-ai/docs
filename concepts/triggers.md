@@ -1,10 +1,10 @@
 # Triggers
 
-Triggers determine when and how agents are activated in the A5C system. This page explains the different trigger mechanisms and their configuration.
+Triggers determine when and how agents are activated in the a5c system. This page explains the different trigger mechanisms and their configuration.
 
 ## Trigger Types
 
-A5C supports six primary trigger types:
+a5c supports six primary trigger types:
 
 ### 1. Event-based Triggers
 
@@ -157,5 +157,5 @@ When configuring triggers:
 ## Next Steps
 
 - Learn about [agent configuration](configuration.md)
-- See the [A5C Registry Repository](https://github.com/a5c-ai/registry) for agent configuration examples
-- Check the [A5C GitHub Action](https://github.com/a5c-ai/action) for trigger configuration examples
+- See the [a5c Registry Repository](https://github.com/a5c-ai/registry) for agent configuration examples
+- Check the [a5c GitHub Action](https://github.com/a5c-ai/action) for trigger configuration examples

@@ -1,7 +1,7 @@
 Reference
 =========
 
-This section provides detailed technical reference information for A5C.
+This section provides detailed technical reference information for a5c (short for "agentic").
 
 .. toctree::
    :maxdepth: 2
@@ -16,14 +16,14 @@ This section provides detailed technical reference information for A5C.
 Configuration Options
 -------------------
 
-Comprehensive reference for all configuration options in A5C.
+Comprehensive reference for all configuration options in a5c.
 
 See the :doc:`configuration-options` page for detailed option descriptions.
 
 Agent Registry
 ------------
 
-Reference documentation for all available agents in the A5C registry.
+Reference documentation for all available agents in the a5c registry.
 
 See the :doc:`agent-registry` page for a complete list of agents and their capabilities.
 
@@ -37,13 +37,13 @@ See the :doc:`mcp-servers` page for server specifications and usage details.
 CLI Tools
 -------
 
-Reference documentation for CLI tools supported by A5C.
+Reference documentation for CLI tools supported by a5c.
 
 See the :doc:`cli-tools` page for tool-specific configuration and usage details.
 
 GitHub Action
 -----------
 
-Reference documentation for the A5C GitHub Action.
+Reference documentation for the a5c GitHub Action.
 
 See the :doc:`github-action` page for action inputs, outputs, and configuration options.

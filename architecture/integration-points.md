@@ -1,14 +1,14 @@
 # Integration Points
 
-This document provides comprehensive details about the integration points available in the A5C system, explaining how A5C connects with GitHub and other external systems.
+This document provides comprehensive details about the integration points available in the a5c system, explaining how a5c connects with GitHub and other external systems.
 
 ## GitHub Integration
 
-GitHub serves as the primary integration platform for A5C, providing both event triggers and interaction points.
+GitHub serves as the primary integration platform for a5c, providing both event triggers and interaction points.
 
 ### GitHub Events
 
-A5C integrates with GitHub's webhook event system to trigger agent activations:
+a5c integrates with GitHub's webhook event system to trigger agent activations:
 
 | Event Type | Description | Available Triggers |
 |------------|-------------|-------------------|
@@ -25,7 +25,7 @@ A5C integrates with GitHub's webhook event system to trigger agent activations:
 
 ### GitHub API
 
-A5C provides agents with access to GitHub's API for various operations:
+a5c provides agents with access to GitHub's API for various operations:
 
 #### Repository Operations
 
@@ -52,7 +52,7 @@ A5C provides agents with access to GitHub's API for various operations:
 
 ### Authentication Methods
 
-A5C supports multiple authentication methods for GitHub integration:
+a5c supports multiple authentication methods for GitHub integration:
 
 - **GitHub Token**: Short-lived tokens for GitHub Actions
 - **GitHub App**: Dedicated GitHub App with fine-grained permissions
@@ -61,11 +61,11 @@ A5C supports multiple authentication methods for GitHub integration:
 
 ## External System Integrations
 
-Beyond GitHub, A5C provides integration points with various external systems:
+Beyond GitHub, a5c provides integration points with various external systems:
 
 ### Version Control Systems
 
-In addition to GitHub, A5C can integrate with:
+In addition to GitHub, a5c can integrate with:
 
 - **GitLab**: Through GitLab API and webhooks
 - **Bitbucket**: Through Bitbucket API and webhooks
@@ -79,7 +79,7 @@ Integration capabilities include:
 
 ### CI/CD Systems
 
-A5C can integrate with CI/CD platforms:
+a5c can integrate with CI/CD platforms:
 
 - **Jenkins**: Through Jenkins API and webhooks
 - **CircleCI**: Through CircleCI API and webhooks
@@ -94,7 +94,7 @@ Integration capabilities include:
 
 ### Communication Platforms
 
-A5C integrates with communication tools:
+a5c integrates with communication tools:
 
 - **Slack**: Through Slack API and webhooks
 - **Discord**: Through Discord API and webhooks
@@ -109,7 +109,7 @@ Integration capabilities include:
 
 ### Project Management Tools
 
-A5C integrates with project management systems:
+a5c integrates with project management systems:
 
 - **Jira**: Through Jira API
 - **Asana**: Through Asana API
@@ -124,14 +124,14 @@ Integration capabilities include:
 
 ## Integration Architecture
 
-A5C implements a layered integration architecture to provide consistent and secure connections to external systems.
+a5c implements a layered integration architecture to provide consistent and secure connections to external systems.
 
 ### Integration Adapters
 
-A5C uses adapters to standardize integration with different systems:
+a5c uses adapters to standardize integration with different systems:
 
 ```
-External System → Integration Adapter → Normalized Events → A5C Core System
+External System → Integration Adapter → Normalized Events → a5c Core System
 ```
 
 Each adapter implements:
@@ -170,7 +170,7 @@ The connector framework provides a consistent approach for all integrations:
 
 ## Custom Integration Development
 
-A5C provides several approaches for developing custom integrations:
+a5c provides several approaches for developing custom integrations:
 
 ### Integration Plugin System
 
@@ -190,23 +190,23 @@ Create custom integrations using the plugin system:
 
 For simpler integrations, use the webhook integration capability:
 
-1. Configure an incoming webhook in A5C
+1. Configure an incoming webhook in a5c
 2. Send HTTP requests to the webhook endpoint
-3. Map payload fields to A5C event fields
+3. Map payload fields to a5c event fields
 4. Define trigger conditions for agents
 
 ### Command Line Integration
 
 For local tooling, use the CLI integration:
 
-1. Install the A5C CLI
+1. Install the a5c CLI
 2. Configure authentication
 3. Use CLI commands to trigger agents and workflows
-4. Pipe data between local tools and A5C
+4. Pipe data between local tools and a5c
 
 ## Integration Authentication and Security
 
-A5C implements several security measures for integrations:
+a5c implements several security measures for integrations:
 
 ### Authentication Methods
 
@@ -347,7 +347,7 @@ tools:
 
 ## Next Steps
 
-For more information about the A5C system:
+For more information about the a5c system:
 
 - [System Overview](system-overview.md) - High-level architecture overview
 - [Components](components.md) - Detailed component documentation

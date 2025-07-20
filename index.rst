@@ -1,7 +1,7 @@
-Welcome to A5C Documentation
+Welcome to a5c Documentation
 ==========================
 
-A5C (agentic) is an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management. It integrates with GitHub through GitHub Actions to provide continuous, automated assistance.
+a5c (short for "agentic") is an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management. It integrates with GitHub through GitHub Actions to provide continuous, automated assistance.
 
 .. toctree::
    :maxdepth: 2
@@ -18,7 +18,7 @@ A5C (agentic) is an AI-powered automation system that uses specialized agents to
 Quick Start
 ----------
 
-To get started with A5C:
+To get started with a5c:
 
 1. Use the `zero-to-demo <https://github.com/a5c-ai/zero-to-demo>`_ template
 2. Write your project requirements in the GitHub project description

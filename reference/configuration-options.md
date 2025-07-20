@@ -1,10 +1,10 @@
 # Configuration Options
 
-This page provides a comprehensive reference for all configuration options available in A5C. Configuration plays a crucial role in customizing agent behavior, setting up triggers, and defining system integration points.
+This page provides a comprehensive reference for all configuration options available in a5c. Configuration plays a crucial role in customizing agent behavior, setting up triggers, and defining system integration points.
 
 ## Configuration Files
 
-A5C uses the following configuration files:
+a5c uses the following configuration files:
 
 | File | Purpose | Location |
 |------|---------|----------|
@@ -15,16 +15,16 @@ A5C uses the following configuration files:
 
 ## Main Configuration Options (a5c.yml)
 
-The main configuration file controls global settings for your A5C implementation.
+The main configuration file controls global settings for your a5c implementation.
 
 ### General Settings
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `version` | String | `"1.0"` | A5C configuration version |
+| `version` | String | `"1.0"` | a5c configuration version |
 | `project_name` | String | Repository name | Name of your project |
-| `description` | String | `""` | Short description of your A5C implementation |
-| `default_branch` | String | `"main"` | Default branch for A5C operations |
+| `description` | String | `""` | Short description of your a5c implementation |
+| `default_branch` | String | `"main"` | Default branch for a5c operations |
 | `log_level` | String | `"info"` | Logging level (`debug`, `info`, `warn`, `error`) |
 
 ### Agent Configuration
@@ -131,7 +131,7 @@ Define when and how agents are activated with these options:
 
 ## Environment Variables
 
-A5C also supports configuration through environment variables:
+a5c also supports configuration through environment variables:
 
 | Environment Variable | Description | Overrides |
 |---------------------|-------------|-----------|
@@ -153,7 +153,7 @@ A5C also supports configuration through environment variables:
 
 ## Related Resources
 
-- [Configuration Guide](/guides/configuration): Step-by-step guide to configuring A5C
+- [Configuration Guide](/guides/configuration): Step-by-step guide to configuring a5c
 - [Agent Setup](/guides/setting-up-agents): How to set up and configure agents
 - [Trigger Configuration](/guides/configuring-triggers): Detailed guide for trigger setup
 - [MCP Configuration](/guides/using-mcp-servers): How to configure and use MCP servers

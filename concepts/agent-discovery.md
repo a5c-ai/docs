@@ -1,6 +1,6 @@
 # Agent Discovery
 
-Agent discovery allows agents to find and collaborate with other agents in the A5C system. This page explains how agent discovery works and how to configure it for effective agent collaboration.
+Agent discovery allows agents to find and collaborate with other agents in the a5c system. This page explains how agent discovery works and how to configure it for effective agent collaboration.
 
 ## What is Agent Discovery?
 
@@ -27,23 +27,23 @@ The agent discovery process follows these steps:
 
 ### 1. Discovery Phase
 
-When an agent is activated, it queries the A5C system for other available agents:
+When an agent is activated, it queries the a5c system for other available agents:
 
 ```mermaid
 sequenceDiagram
     participant Agent as Activated Agent
-    participant A5C as A5C System
+    participant a5c as A5C System
     participant Registry as Agent Registry
     
-    Agent->>A5C: Request agent discovery
-    A5C->>Registry: Query available agents
-    Registry->>A5C: Return matching agents
-    A5C->>Agent: Provide agent context
+    Agent->>a5c: Request agent discovery
+    a5c->>Registry: Query available agents
+    Registry->>a5c: Return matching agents
+    a5c->>Agent: Provide agent context
 ```
 
 ### 2. Context Building
 
-The A5C system builds context information about discovered agents:
+The a5c system builds context information about discovered agents:
 
 ```json
 {

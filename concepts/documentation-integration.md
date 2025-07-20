@@ -1,19 +1,19 @@
 # Documentation Integration
 
-A5C provides powerful integration capabilities for documentation management, allowing you to leverage AI agents to help maintain, improve, and automate your documentation workflow.
+a5c provides powerful integration capabilities for documentation management, allowing you to leverage AI agents to help maintain, improve, and automate your documentation workflow.
 
 ## Overview
 
-Documentation integration in A5C allows you to:
+Documentation integration in a5c allows you to:
 
 1. **Automate Documentation Maintenance**: Keep documentation up-to-date with code changes
 2. **Generate New Documentation**: Create new guides, tutorials, or reference materials
 3. **Review Existing Documentation**: Identify gaps, inconsistencies, or outdated information
 4. **Improve Content Quality**: Enhance readability, consistency, and accuracy
 
-## A5C Configuration for Documentation
+## a5c Configuration for Documentation
 
-The A5C configuration for documentation projects typically includes the following components:
+The a5c configuration for documentation projects typically includes the following components:
 
 ### Agent Configuration
 
@@ -43,7 +43,7 @@ remote_agents:
 ### GitHub Workflow
 
 ```yaml
-name: A5C Agent System
+name: a5c Agent System
 on:
   pull_request:
     types: [opened, synchronize]
@@ -72,7 +72,7 @@ jobs:
 
 ## Key Agents for Documentation
 
-A5C documentation integration leverages several specialized agents:
+a5c documentation integration leverages several specialized agents:
 
 ### 1. Content Writer Agent
 
@@ -85,7 +85,7 @@ The content-writer-agent specializes in creating high-quality documentation cont
 
 **Invocation Example:**
 ```
-@content-writer-agent Please create a new guide explaining how to set up A5C with GitHub Actions.
+@content-writer-agent Please create a new guide explaining how to set up a5c with GitHub Actions.
 ```
 
 ### 2. Developer Agent
@@ -99,7 +99,7 @@ The developer-agent helps with technical aspects of documentation:
 
 **Invocation Example:**
 ```
-@developer-agent Please document the configuration options for A5C.
+@developer-agent Please document the configuration options for a5c.
 ```
 
 ### 3. Validator Agent
@@ -146,7 +146,7 @@ The build-fixer-agent ensures documentation builds correctly:
 
 ## Documentation Workflow
 
-A typical A5C-powered documentation workflow includes:
+A typical a5c-powered documentation workflow includes:
 
 1. **Issue Creation**: Create an issue describing the documentation need
 2. **Agent Invocation**: Mention the appropriate agent (e.g., @content-writer-agent)
@@ -157,17 +157,17 @@ A typical A5C-powered documentation workflow includes:
 
 ## Best Practices
 
-When using A5C for documentation management:
+When using a5c for documentation management:
 
 1. **Provide Clear Requirements**: Be specific about what documentation you need
 2. **Use the Right Agent**: Select the most appropriate agent for each task
 3. **Review Agent Output**: Always verify the accuracy of generated content
-4. **Maintain Style Guidelines**: Ensure A5C follows your documentation standards
-5. **Integrate with Existing Workflows**: Use A5C alongside your existing tools
+4. **Maintain Style Guidelines**: Ensure a5c follows your documentation standards
+5. **Integrate with Existing Workflows**: Use a5c alongside your existing tools
 
 ## Automation Opportunities
 
-A5C enables several documentation automation opportunities:
+a5c enables several documentation automation opportunities:
 
 - **Auto-generate API documentation** from code changes
 - **Schedule regular documentation reviews**

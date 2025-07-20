@@ -1,10 +1,10 @@
 # System Overview
 
-This document provides a high-level overview of the A5C (agentic) system architecture.
+This document provides a high-level overview of the a5c (short for "agentic") system architecture.
 
 ## Architectural Philosophy
 
-A5C follows a distributed agent-based architecture designed for:
+a5c follows a distributed agent-based architecture designed for:
 
 1. **Modularity**: Independent components with specific responsibilities
 2. **Extensibility**: Easy addition of new agents and capabilities
@@ -14,9 +14,9 @@ A5C follows a distributed agent-based architecture designed for:
 
 ## Core System Components
 
-The A5C system consists of these primary components:
+The a5c system consists of these primary components:
 
-![A5C System Architecture](/images/a5c-system-architecture.png)
+![a5c System Architecture](/images/a5c-system-architecture.png)
 
 ### 1. GitHub Action Runner
 
@@ -55,7 +55,7 @@ The A5C system consists of these primary components:
 
 ## System Layers
 
-A5C is organized into several architectural layers:
+a5c is organized into several architectural layers:
 
 ### 1. Integration Layer
 
@@ -91,7 +91,7 @@ Manages data storage and state:
 
 ## Deployment Model
 
-A5C can be deployed in several configurations:
+a5c can be deployed in several configurations:
 
 ### GitHub Action Based (Standard)
 
@@ -116,7 +116,7 @@ A5C can be deployed in several configurations:
 
 ## Security Architecture
 
-A5C implements security at multiple levels:
+a5c implements security at multiple levels:
 
 ### 1. Authentication
 
@@ -144,8 +144,8 @@ A5C implements security at multiple levels:
 
 ## Next Steps
 
-For more detailed information about the A5C architecture, see:
+For more detailed information about the a5c architecture, see:
 
 - [Components](components.md) - Detailed documentation of each component
 - [Data Flow](data-flow.md) - How information moves through the system
-- [Integration Points](integration-points.md) - How A5C connects with external systems
+- [Integration Points](integration-points.md) - How a5c connects with external systems

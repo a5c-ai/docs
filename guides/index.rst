@@ -1,7 +1,7 @@
 Guides
 ======
 
-This section provides practical how-to guides for common A5C tasks.
+This section provides practical how-to guides for common a5c tasks.
 
 .. toctree::
    :maxdepth: 2
@@ -54,7 +54,7 @@ See the :doc:`creating-custom-agents` guide for a step-by-step process.
 Content Creation Workflows
 ----------------------
 
-Learn how to use A5C agents to streamline documentation and content creation processes.
+Learn how to use a5c agents to streamline documentation and content creation processes.
 
 See the :doc:`content-creation-workflows` guide for practical workflows and best practices.
 
@@ -63,11 +63,11 @@ Documentation CI
 
 Set up Continuous Integration workflows for documentation to ensure quality and consistency.
 
-See the :doc:`documentation-ci` guide for implementing documentation CI with A5C.
+See the :doc:`documentation-ci` guide for implementing documentation CI with a5c.
 
 Troubleshooting
 ------------
 
-Solve common issues with A5C setup and operation.
+Solve common issues with a5c setup and operation.
 
 See the :doc:`troubleshooting` guide for solutions to common problems.

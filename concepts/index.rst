@@ -1,7 +1,7 @@
 Core Concepts
 ============
 
-This section explains the fundamental concepts behind A5C.
+This section explains the fundamental concepts behind a5c (short for "agentic").
 
 .. toctree::
    :maxdepth: 2
@@ -18,28 +18,28 @@ This section explains the fundamental concepts behind A5C.
 Agents
 ------
 
-Agents are the core building blocks of A5C. Each agent is a specialized AI assistant with specific capabilities and responsibilities.
+Agents are the core building blocks of a5c. Each agent is a specialized AI assistant with specific capabilities and responsibilities.
 
 Learn more about agents in the :doc:`agents` page.
 
 Triggers
 --------
 
-Triggers determine when and how agents are activated. A5C supports multiple trigger mechanisms, including events, mentions, schedules, labels, branches, and file patterns.
+Triggers determine when and how agents are activated. a5c supports multiple trigger mechanisms, including events, mentions, schedules, labels, branches, and file patterns.
 
 Learn more about triggers in the :doc:`triggers` page.
 
 Configuration
 ------------
 
-A5C uses a flexible, hierarchical configuration system that allows for both global and agent-specific settings.
+a5c uses a flexible, hierarchical configuration system that allows for both global and agent-specific settings.
 
 Learn more about configuration in the :doc:`configuration` page.
 
 MCP (Model Context Protocol)
 ------------------------
 
-MCP enables agents to interact with external services and tools. A5C includes built-in MCP servers for common operations.
+MCP enables agents to interact with external services and tools. a5c includes built-in MCP servers for common operations.
 
 Learn more about MCP in the :doc:`mcp` page.
 
@@ -53,13 +53,13 @@ Learn more about agent discovery in the :doc:`agent-discovery` page.
 CLI Integration
 -------------
 
-A5C supports multiple CLI tools for agent execution, including Claude, Aider, and Cursor.
+a5c supports multiple CLI tools for agent execution, including Claude, Aider, and Cursor.
 
 Learn more about CLI integration in the :doc:`cli-integration` page.
 
 Documentation Integration
 ----------------------
 
-A5C provides specialized features for documentation management, allowing you to automate the creation, maintenance, and review of documentation.
+a5c provides specialized features for documentation management, allowing you to automate the creation, maintenance, and review of documentation.
 
 Learn more about documentation integration in the :doc:`documentation-integration` page.
