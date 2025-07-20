@@ -1,10 +1,10 @@
 # Configuration
 
-A5C uses a flexible, hierarchical configuration system that allows for both global and agent-specific settings. This page explains the configuration options and how they affect agent behavior.
+a5c uses a flexible, hierarchical configuration system that allows for both global and agent-specific settings. This page explains the configuration options and how they affect agent behavior.
 
 ## Configuration Hierarchy
 
-A5C configuration follows a hierarchical structure with multiple levels:
+a5c configuration follows a hierarchical structure with multiple levels:
 
 1. **Default settings**: Built-in defaults that apply when no other configuration is specified
 2. **Global configuration**: Settings that apply to all agents in the system
@@ -15,14 +15,14 @@ Each level overrides the settings from the previous level, allowing for both bro
 
 ## Configuration Files
 
-A5C uses several configuration files:
+a5c uses several configuration files:
 
 ### 1. Global Configuration (.a5c/config.yml)
 
 The main configuration file located at `.a5c/config.yml` defines global settings:
 
 ```yaml
-# A5C Global Configuration
+# a5c Global Configuration
 version: 1.0.0
 
 # System Settings
@@ -185,7 +185,7 @@ A5C_GITHUB_TOKEN=ghp_123456789abcdef
 
 ## Configuration Best Practices
 
-When configuring A5C:
+When configuring a5c:
 
 1. **Use the hierarchy effectively**
    - Set common defaults at the global level
@@ -214,7 +214,7 @@ When configuring A5C:
 
 ## Dynamic Configuration
 
-A5C supports dynamic configuration that can change based on runtime conditions:
+a5c supports dynamic configuration that can change based on runtime conditions:
 
 ### Context-based Configuration
 
@@ -242,7 +242,7 @@ features:
 
 ## Migrating Configuration
 
-When upgrading A5C, configuration migration may be necessary:
+When upgrading a5c, configuration migration may be necessary:
 
 1. Check the migration guide for your target version
 2. Back up your existing configuration files
@@ -255,4 +255,4 @@ When upgrading A5C, configuration migration may be necessary:
 - Learn about [Model Context Protocol](mcp.md)
 - Understand [agent discovery](agent-discovery.md)
 - Explore [CLI integration](cli-integration.md)
-- See the [A5C Registry Repository](https://github.com/a5c-ai/registry) for agent configuration examples
+- See the [a5c Registry Repository](https://github.com/a5c-ai/registry) for agent configuration examples

@@ -1,6 +1,6 @@
-# Documentation CI with A5C
+# Documentation CI with a5c
 
-This guide explains how to set up a Continuous Integration (CI) workflow for documentation using A5C agents.
+This guide explains how to set up a Continuous Integration (CI) workflow for documentation using a5c agents.
 
 ## Overview
 
@@ -11,18 +11,18 @@ A documentation CI workflow helps ensure that your documentation:
 3. **Stays updated**: Reflects the latest features and changes
 4. **Remains consistent**: Uses consistent terminology and formatting
 
-A5C agents can automate many aspects of this workflow, reducing manual effort and improving quality.
+a5c agents can automate many aspects of this workflow, reducing manual effort and improving quality.
 
 ## Setting Up Documentation CI
 
 ### Prerequisites
 
-Before setting up documentation CI with A5C, ensure you have:
+Before setting up documentation CI with a5c, ensure you have:
 
 - A documentation repository with Sphinx, MkDocs, or similar tooling
-- A5C configured in your repository
+- a5c configured in your repository
 - Appropriate agents added to your `.a5c/config.yml`
-- GitHub Actions set up for A5C integration
+- GitHub Actions set up for a5c integration
 
 ### Required Agents
 
@@ -89,7 +89,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Run A5C Agents for doc fixes
+      - name: Run a5c Agents for doc fixes
         uses: a5c-ai/action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -101,7 +101,7 @@ jobs:
 This workflow:
 1. Triggers on changes to documentation files
 2. Attempts to build the documentation
-3. If the build fails, activates A5C agents to fix the issues
+3. If the build fails, activates a5c agents to fix the issues
 
 ## Agent Configurations for Documentation CI
 
@@ -181,7 +181,7 @@ When fixing documentation build issues:
 
 ## CI Workflow Process
 
-A typical documentation CI workflow with A5C follows these steps:
+A typical documentation CI workflow with a5c follows these steps:
 
 ### 1. Continuous Validation
 
@@ -235,7 +235,7 @@ Please review the technical accuracy of the installation instructions for Linux 
 
 ## Best Practices
 
-For effective documentation CI with A5C:
+For effective documentation CI with a5c:
 
 1. **Define Clear Style Guidelines**: Document your style expectations in CLAUDE.md
 2. **Use Branch Protection**: Require documentation builds to pass before merging
@@ -273,7 +273,7 @@ If validator results are inconsistent:
 
 ### Integration Issues
 
-If A5C agents aren't triggering properly:
+If a5c agents aren't triggering properly:
 - Check the workflow configuration
 - Verify that file paths are correct
 - Ensure agents have appropriate permissions

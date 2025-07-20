@@ -1,17 +1,17 @@
 # GitHub Action
 
-This page provides comprehensive reference documentation for the A5C GitHub Action. The action enables seamless integration of A5C with GitHub repositories, workflows, and events.
+This page provides comprehensive reference documentation for the A5C GitHub Action. The action enables seamless integration of a5c with GitHub repositories, workflows, and events.
 
 ## Overview
 
-The A5C GitHub Action automates the deployment and execution of A5C agents within GitHub workflows. It handles agent activation, coordination, and reporting based on GitHub events.
+The A5C GitHub Action automates the deployment and execution of a5c agents within GitHub workflows. It handles agent activation, coordination, and reporting based on GitHub events.
 
 ## Usage
 
 Add the A5C GitHub Action to your workflow file (`.github/workflows/a5c.yml`):
 
 ```yaml
-name: A5C
+name: a5c
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Run A5C
+      - name: Run a5c
         uses: a5c-ai/a5c-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -115,13 +115,13 @@ Access outputs in subsequent workflow steps:
 
 ```yaml
 steps:
-  - name: Run A5C
+  - name: Run a5c
     id: a5c
     uses: a5c-ai/a5c-action@v1
     with:
       github_token: ${{ secrets.GITHUB_TOKEN }}
 
-  - name: Use A5C outputs
+  - name: Use a5c outputs
     run: |
       echo "Activated agents: ${{ steps.a5c.outputs.activated_agents }}"
       echo "Created PRs: ${{ steps.a5c.outputs.created_prs }}"
@@ -134,7 +134,7 @@ steps:
 Connect to a custom MCP server:
 
 ```yaml
-- name: Run A5C with custom MCP
+- name: Run a5c with custom MCP
   uses: a5c-ai/a5c-action@v1
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -144,10 +144,10 @@ Connect to a custom MCP server:
 
 ### Filter by File Paths
 
-Only trigger A5C for specific file changes:
+Only trigger a5c for specific file changes:
 
 ```yaml
-- name: Run A5C for specific files
+- name: Run a5c for specific files
   uses: a5c-ai/a5c-action@v1
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -159,7 +159,7 @@ Only trigger A5C for specific file changes:
 Provide custom configuration for specific agents:
 
 ```yaml
-- name: Run A5C with agent config
+- name: Run a5c with agent config
   uses: a5c-ai/a5c-action@v1
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -178,10 +178,10 @@ Provide custom configuration for specific agents:
 
 ### Custom Environments
 
-Run A5C in custom CI environments:
+Run a5c in custom CI environments:
 
 ```yaml
-- name: Run A5C in custom environment
+- name: Run a5c in custom environment
   uses: a5c-ai/a5c-action@v1
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -195,7 +195,7 @@ Run A5C in custom CI environments:
 
 ## Using with Matrix Strategy
 
-Run A5C for multiple configurations using GitHub's matrix strategy:
+Run a5c for multiple configurations using GitHub's matrix strategy:
 
 ```yaml
 jobs:
@@ -210,7 +210,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Run A5C
+      - name: Run a5c
         uses: a5c-ai/a5c-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -288,7 +288,7 @@ The A5C GitHub Action provides detailed error handling and reporting:
 Enable strict mode:
 
 ```yaml
-- name: Run A5C in strict mode
+- name: Run a5c in strict mode
   uses: a5c-ai/a5c-action@v1
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -310,7 +310,7 @@ When using the A5C GitHub Action:
 Secure configuration for public repositories:
 
 ```yaml
-name: A5C
+name: a5c
 
 on:
   pull_request:
@@ -327,7 +327,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Run A5C
+      - name: Run a5c
         uses: a5c-ai/a5c-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

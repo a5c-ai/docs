@@ -1,6 +1,6 @@
-# A5C Documentation
+# a5c Documentation
 
-This repository contains the official documentation for A5C (agentic), an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management.
+This repository contains the official documentation for a5c (short for "agentic"), an AI-powered automation system that uses specialized agents to handle various aspects of software development and project management.
 
 ## Documentation Structure
 
@@ -28,4 +28,4 @@ Contributions to the documentation are welcome! Please see the [Contributing Gui
 
 ## License
 
-A5C documentation is licensed under [LICENSE NAME] - see the LICENSE file for details.
+a5c documentation is licensed under [LICENSE NAME] - see the LICENSE file for details.

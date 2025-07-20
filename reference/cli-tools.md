@@ -1,10 +1,10 @@
 # CLI Tools
 
-This page provides comprehensive reference documentation for Command Line Interface (CLI) tools supported by A5C. These tools enable efficient management, configuration, and interaction with A5C components from the terminal.
+This page provides comprehensive reference documentation for Command Line Interface (CLI) tools supported by a5c. These tools enable efficient management, configuration, and interaction with a5c components from the terminal.
 
 ## Core CLI Commands
 
-A5C provides a primary command-line tool (`a5c`) with various subcommands for different operations.
+a5c provides a primary command-line tool (`a5c`) with various subcommands for different operations.
 
 ### Installation
 
@@ -32,13 +32,13 @@ These options apply to all commands:
 
 ## Command Reference
 
-### Initialize A5C
+### Initialize a5c
 
 ```bash
 a5c init [options]
 ```
 
-Creates a new A5C configuration in the current directory.
+Creates a new a5c configuration in the current directory.
 
 **Options**:
 
@@ -71,7 +71,7 @@ a5c init --template minimal
 a5c agent [command] [options]
 ```
 
-Commands for managing A5C agents.
+Commands for managing a5c agents.
 
 **Subcommands**:
 
@@ -117,7 +117,7 @@ a5c agent run security-scanner --path ./src
 a5c trigger [command] [options]
 ```
 
-Commands for managing A5C triggers.
+Commands for managing a5c triggers.
 
 **Subcommands**:
 
@@ -212,7 +212,7 @@ a5c mcp stats --period 7d
 a5c project [command] [options]
 ```
 
-Commands for managing A5C projects.
+Commands for managing a5c projects.
 
 **Subcommands**:
 
@@ -223,7 +223,7 @@ Commands for managing A5C projects.
 | `stats` | Show project statistics |
 | `export` | Export project configuration |
 | `import` | Import project configuration |
-| `upgrade` | Upgrade project to latest A5C version |
+| `upgrade` | Upgrade project to latest a5c version |
 
 **Options**:
 
@@ -250,7 +250,7 @@ a5c project upgrade --backup
 
 ## Development Tools
 
-A5C includes development tools for creating and testing custom components.
+a5c includes development tools for creating and testing custom components.
 
 ### Agent Development
 
@@ -332,7 +332,7 @@ a5c dev mcp benchmark my-mcp --requests 1000 --concurrency 10
 
 ## Integration Tools
 
-A5C provides tools for integration with version control systems and CI/CD platforms.
+a5c provides tools for integration with version control systems and CI/CD platforms.
 
 ### GitHub Integration
 
@@ -412,7 +412,7 @@ a5c gitlab test --event merge_request
 
 ## Configuration Management
 
-Tools for managing A5C configuration.
+Tools for managing a5c configuration.
 
 ### Configuration Commands
 
@@ -458,7 +458,7 @@ a5c config edit
 
 ## Debugging Tools
 
-A5C includes tools for debugging and troubleshooting.
+a5c includes tools for debugging and troubleshooting.
 
 ### Debug Commands
 
@@ -504,11 +504,11 @@ a5c debug doctor
 
 ## Environment Variables
 
-A5C CLI tools respect the following environment variables:
+a5c CLI tools respect the following environment variables:
 
 | Variable | Description |
 |----------|-------------|
-| `A5C_CONFIG_PATH` | Path to A5C configuration file |
+| `A5C_CONFIG_PATH` | Path to a5c configuration file |
 | `A5C_LOG_LEVEL` | Log level (`debug`, `info`, `warn`, `error`) |
 | `A5C_MCP_URL` | URL of MCP server |
 | `A5C_MCP_TOKEN` | Authentication token for MCP server |
@@ -521,5 +521,5 @@ A5C CLI tools respect the following environment variables:
 
 - [CLI Installation Guide](/getting-started/installation#cli-installation)
 - [CLI Usage Tutorial](/tutorials/cli-basics)
-- [Automating A5C with CLI](/guides/cli-automation)
+- [Automating a5c with CLI](/guides/cli-automation)
 - [Custom CLI Plugin Development](/guides/custom-cli-plugins)

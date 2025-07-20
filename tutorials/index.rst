@@ -1,7 +1,7 @@
 Tutorials
 =========
 
-This section provides step-by-step tutorials for common A5C use cases.
+This section provides step-by-step tutorials for common a5c use cases.
 
 .. toctree::
    :maxdepth: 2
@@ -15,14 +15,14 @@ This section provides step-by-step tutorials for common A5C use cases.
 Building a Project from Scratch
 ----------------------------
 
-Follow this tutorial to build a complete project from scratch using A5C.
+Follow this tutorial to build a complete project from scratch using a5c.
 
 See the :doc:`building-project-from-scratch` tutorial for a complete walkthrough.
 
-Adding A5C to Existing Projects
+Adding a5c to Existing Projects
 ----------------------------
 
-Learn how to integrate A5C into your existing projects.
+Learn how to integrate a5c into your existing projects.
 
 See the :doc:`adding-a5c-to-existing-projects` tutorial for step-by-step instructions.
 
@@ -36,6 +36,6 @@ See the :doc:`creating-custom-agents` tutorial for a guided development process.
 Implementing Custom MCP Servers
 ---------------------------
 
-Extend A5C with custom MCP servers for specialized integrations.
+Extend a5c with custom MCP servers for specialized integrations.
 
 See the :doc:`implementing-custom-mcp-servers` tutorial for implementation details.

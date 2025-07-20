@@ -1,10 +1,10 @@
 # Quick Start
 
-This guide will help you get up and running with A5C in minutes using the zero-to-demo template.
+This guide will help you get up and running with a5c (short for "agentic") in minutes using the zero-to-demo template.
 
 ## Using the Zero-to-Demo Template
 
-The fastest way to start with A5C is to use the zero-to-demo template repository.
+The fastest way to start with a5c is to use the zero-to-demo template repository.
 
 ### 1. Create a New Repository from the Template
 
@@ -41,7 +41,7 @@ The project-seeder-agent will automatically:
 1. Analyze your requirements
 2. Set up the project structure
 3. Install necessary dependencies
-4. Configure appropriate A5C agents
+4. Configure appropriate a5c agents
 5. Create GitHub issues for the development tasks
 
 This typically takes a few minutes to complete.
@@ -56,7 +56,7 @@ Once the project-seeder-agent has finished, you can:
 
 ## Manual Setup
 
-If you prefer to add A5C to an existing project:
+If you prefer to add a5c to an existing project:
 
 ### 1. Create the Basic Configuration
 
@@ -82,7 +82,7 @@ agents:
 Create a `.github/workflows/a5c.yml` file:
 
 ```yaml
-name: A5C Agent System
+name: a5c Agent System
 on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
@@ -108,7 +108,7 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Run A5C Agents
+      - name: Run a5c Agents
         uses: a5c-ai/action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -128,9 +128,9 @@ Create a new issue with "@developer-agent Hello world" to test if your setup is 
 
 ## Next Steps
 
-Now that you have A5C set up, you can:
+Now that you have a5c set up, you can:
 
-- Learn about different agent types in the [A5C Registry](https://github.com/a5c-ai/registry)
+- Learn about different agent types in the [a5c Registry](https://github.com/a5c-ai/registry)
 - Understand GitHub Action triggers as shown in the [Action Configuration](#2-set-up-github-action) above
-- See the [A5C GitHub Action repository](https://github.com/a5c-ai/action) for more configuration options
+- See the [a5c GitHub Action repository](https://github.com/a5c-ai/action) for more configuration options
 - Follow our [first project tutorial](first-project.md) for a guided experience

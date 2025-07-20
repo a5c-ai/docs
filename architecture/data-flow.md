@@ -1,12 +1,12 @@
 # Data Flow
 
-This document explains how data flows through the A5C system, including key processes, data transformations, and communication paths.
+This document explains how data flows through the a5c system, including key processes, data transformations, and communication paths.
 
 ## System Data Flow Overview
 
-The A5C system processes data through a series of coordinated steps, transforming GitHub events into agent actions and system responses.
+The a5c system processes data through a series of coordinated steps, transforming GitHub events into agent actions and system responses.
 
-![A5C Data Flow Diagram](/images/a5c-data-flow.png)
+![a5c Data Flow Diagram](/images/a5c-data-flow.png)
 
 ## Core Data Paths
 
@@ -168,7 +168,7 @@ sequenceDiagram
     // Varies by event type
   },
   "ref": "string",        // For branch-related events
-  "metadata": {           // A5C-specific context
+  "metadata": {           // a5c-specific context
     "trigger_type": "string",
     "agent_mentions": ["string"],
     "matched_patterns": ["string"]
@@ -225,7 +225,7 @@ sequenceDiagram
 
 ## Data Flow Control
 
-A5C implements several mechanisms to control and optimize data flow:
+a5c implements several mechanisms to control and optimize data flow:
 
 ### Filtering and Prioritization
 
@@ -290,7 +290,7 @@ When one agent needs assistance from another:
 
 ## Security Considerations
 
-The A5C data flow implements several security measures:
+The a5c data flow implements several security measures:
 
 - **Data Validation**: All inputs are validated at system boundaries
 - **Permission Boundaries**: Data access follows least-privilege principle
@@ -300,7 +300,7 @@ The A5C data flow implements several security measures:
 
 ## Performance Optimizations
 
-A5C optimizes data flow for performance:
+a5c optimizes data flow for performance:
 
 - **Parallel Processing**: Independent operations execute concurrently
 - **Caching**: Frequently accessed data is cached
@@ -314,4 +314,4 @@ For more information about how data flows through specific components:
 
 - [System Overview](system-overview.md) - High-level architecture overview
 - [Components](components.md) - Detailed component documentation
-- [Integration Points](integration-points.md) - How A5C connects with external systems
+- [Integration Points](integration-points.md) - How a5c connects with external systems

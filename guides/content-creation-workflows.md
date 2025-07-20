@@ -1,14 +1,14 @@
 # Content Creation Workflows
 
-This guide explains how to use A5C agents to streamline content creation workflows for your documentation.
+This guide explains how to use a5c agents to streamline content creation workflows for your documentation.
 
 ## Prerequisites
 
-Before implementing content creation workflows with A5C, ensure you have:
+Before implementing content creation workflows with a5c, ensure you have:
 
-- A5C configured in your documentation repository
+- a5c configured in your documentation repository
 - The content-writer-agent and researcher-agent added to your `.a5c/config.yml`
-- GitHub Actions set up for A5C integration
+- GitHub Actions set up for a5c integration
 
 ## Common Documentation Workflows
 
@@ -120,7 +120,7 @@ Please fix these issues.
 
 ## Automating Documentation with Triggers
 
-You can automate documentation workflows using A5C triggers:
+You can automate documentation workflows using a5c triggers:
 
 ### Code Change Triggers
 
@@ -154,7 +154,7 @@ labels: ["needs-docs"]
 
 ## Best Practices
 
-When implementing documentation workflows with A5C:
+When implementing documentation workflows with a5c:
 
 1. **Use Clear Issue Templates**: Create issue templates for different documentation needs
 2. **Be Specific with Requirements**: Provide detailed requirements for content creation
@@ -196,7 +196,7 @@ Keep documentation current with:
 
 ## Troubleshooting
 
-Common issues and solutions for A5C documentation workflows:
+Common issues and solutions for a5c documentation workflows:
 
 ### Agents Not Responding
 

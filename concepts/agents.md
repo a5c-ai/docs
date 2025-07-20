@@ -1,10 +1,10 @@
 # Agents
 
-Agents are the core building blocks of A5C. Each agent is a specialized AI assistant with specific capabilities and responsibilities.
+Agents are the core building blocks of a5c. Each agent is a specialized AI assistant with specific capabilities and responsibilities.
 
 ## What is an Agent?
 
-An A5C agent is:
+An a5c agent is:
 
 1. **An AI-powered automation unit** with specific capabilities and responsibilities
 2. **Triggered by specific events** like GitHub events, mentions, schedules, or labels
@@ -80,7 +80,7 @@ For example:
 ```markdown
 # Developer Agent
 
-You are a Developer Agent, part of the A5C agent system. Your primary role is to assist with code development tasks including implementation, debugging, and code improvement.
+You are a Developer Agent, part of the a5c agent system. Your primary role is to assist with code development tasks including implementation, debugging, and code improvement.
 
 ## Core Responsibilities
 
@@ -102,7 +102,7 @@ Always follow these guidelines when responding:
 
 ## Agent Categories
 
-A5C organizes agents into different categories based on their primary function:
+a5c organizes agents into different categories based on their primary function:
 
 ### Development Agents
 
@@ -145,7 +145,7 @@ Conduct research on various topics:
 
 ## Agent Inheritance
 
-A5C supports agent inheritance, allowing you to extend base agents with specialized functionality:
+a5c supports agent inheritance, allowing you to extend base agents with specialized functionality:
 
 ```yaml
 ---
@@ -223,7 +223,7 @@ To create a custom agent:
 3. Write the prompt instructions for the agent
 4. Add the agent to your `.a5c/config.yml` file
 
-For a detailed guide on creating custom agents, see the [A5C Registry Repository](https://github.com/a5c-ai/registry) for examples.
+For a detailed guide on creating custom agents, see the [a5c Registry Repository](https://github.com/a5c-ai/registry) for examples.
 
 ## Best Practices
 

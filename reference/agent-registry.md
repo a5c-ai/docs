@@ -1,10 +1,10 @@
 # Agent Registry
 
-This page provides comprehensive reference documentation for all available agents in the A5C registry. Each agent has specific capabilities, triggers, and configuration options.
+This page provides comprehensive reference documentation for all available agents in the a5c registry. Each agent has specific capabilities, triggers, and configuration options.
 
 ## Core Agents
 
-These agents form the foundation of the A5C system and provide essential functionality.
+These agents form the foundation of the a5c system and provide essential functionality.
 
 ### Coordination Agent
 
@@ -263,7 +263,7 @@ cost_optimization: true
 
 ## Custom Agent Development
 
-A5C supports creating custom agents for specialized tasks. Custom agents must follow the A5C agent protocol and implement required interfaces.
+a5c supports creating custom agents for specialized tasks. Custom agents must follow the a5c agent protocol and implement required interfaces.
 
 ### Agent Structure
 

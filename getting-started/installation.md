@@ -1,10 +1,10 @@
 # Installation
 
-This guide explains how to install and set up A5C in your GitHub repository.
+This guide explains how to install and set up a5c in your GitHub repository.
 
 ## Prerequisites
 
-Before setting up A5C, you'll need:
+Before setting up a5c, you'll need:
 
 - A GitHub repository with appropriate permissions
 - An Anthropic API key for Claude access
@@ -25,7 +25,7 @@ mkdir -p .a5c
 Create a `config.yml` file in the `.a5c` directory:
 
 ```yaml
-# Basic A5C configuration
+# Basic a5c configuration
 version: 1.0.0
 settings:
   model: claude-3-7-sonnet-20250219
@@ -46,7 +46,7 @@ agents:
 Create a `.github/workflows/a5c.yml` file:
 
 ```yaml
-name: A5C Agent System
+name: a5c Agent System
 on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
@@ -72,7 +72,7 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Run A5C Agents
+      - name: Run a5c Agents
         uses: a5c-ai/action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -96,7 +96,7 @@ Add the following secrets to your GitHub repository:
 
 ### Custom MCP Servers
 
-Model Context Protocol (MCP) servers extend Claude's capabilities, allowing it to interact with external systems and services. A5C includes several built-in MCP servers:
+Model Context Protocol (MCP) servers extend Claude's capabilities, allowing it to interact with external systems and services. a5c includes several built-in MCP servers:
 
 - **filesystem**: For reading and writing files
 - **memory**: For maintaining context across interactions
@@ -131,7 +131,7 @@ mkdir -p .a5c/agents
 
 ## Available Agents
 
-A5C comes with several pre-configured agents in the registry, each with specific capabilities:
+a5c comes with several pre-configured agents in the registry, each with specific capabilities:
 
 - **@developer-agent**: General-purpose development assistant for code implementation and problem-solving
 - **@code-review-agent**: Specialized in analyzing and reviewing code quality, security, and best practices
@@ -158,4 +158,4 @@ If agents aren't responding:
 3. Ensure your configuration file is properly formatted
 4. Check that the agents you're trying to use are available in the repository you're referencing
 
-For more help, see the [A5C Registry Repository](https://github.com/a5c-ai/registry) or [open an issue](https://github.com/a5c-ai/registry/issues/new) in the A5C registry repository.
+For more help, see the [a5c Registry Repository](https://github.com/a5c-ai/registry) or [open an issue](https://github.com/a5c-ai/registry/issues/new) in the a5c registry repository.

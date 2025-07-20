@@ -1,6 +1,6 @@
-# A5C Documentation Guidelines
+# a5c Documentation Guidelines
 
-This file contains guidelines for creating effective documentation for the A5C project.
+This file contains guidelines for creating effective documentation for the a5c project.
 
 ## Do's — What to Prioritize
 
@@ -55,7 +55,7 @@ Documentation should follow this general structure:
 
 5. **Tutorials**
    - Building a Project from Scratch
-   - Adding A5C to Existing Projects
+   - Adding a5c to Existing Projects
    - Creating Custom Agents
    - Implementing Custom MCP Servers
 

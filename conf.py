@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'A5C'
-copyright = '2025, A5C Team'
-author = 'A5C Team'
+project = 'a5c'
+copyright = '2025, a5c Team'
+author = 'a5c Team'
 release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
