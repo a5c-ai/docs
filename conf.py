@@ -27,9 +27,18 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-import sphinx_readable_theme
-html_theme = 'readable'
-html_theme_path = [sphinx_readable_theme.get_html_theme_path()]
+html_theme = 'sphinx_nefertiti'
+
+# Theme options for sphinx-nefertiti
+html_theme_options = {
+    "sans_serif_font": "Nunito",
+    "documentation_font": "Open Sans",
+    "monospace_font": "Ubuntu Sans Mono",
+    "project_name_font": "Nunito",
+    "doc_headers_font": "Georgia",
+    "documentation_font_size": "1.1rem",
+    "monospace_font_size": "1.0rem",
+}
 
 html_static_path = ['_static']
 
