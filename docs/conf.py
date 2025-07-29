@@ -1,32 +1,32 @@
- # Configuration file for the Sphinx documentation builder.
+# Configuration file for the Sphinx documentation builder.
 
- import os
- import sys
- sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
 
- # -- Project information -----------------------------------------------------
+# -- Project information -----------------------------------------------------
 
- project = 'a5c'
- author = 'a5c-ai'
- release = '0.1.0'
+project = 'a5c'
+author = 'a5c-ai'
+release = '0.1.0'
 
- # -- General configuration ---------------------------------------------------
+# -- General configuration ---------------------------------------------------
 
- extensions = [
-     'myst_parser',
- ]
+extensions = [
+    'myst_parser',
+]
 
- templates_path = ['_templates']
- exclude_patterns = []
+templates_path = ['_templates']
+exclude_patterns = []
 
- # -- Options for HTML output -------------------------------------------------
+# -- Options for HTML output -------------------------------------------------
 
- html_theme = 'sphinx_nefertiti'
- html_theme_options = {}
+html_theme = 'sphinx_nefertiti'
+html_theme_options = {}
 
- # -- Options for MyST parser ------------------------------------------------
+# -- Options for MyST parser ------------------------------------------------
 
- myst_enable_extensions = [
-     'deflist',
-     'html_admonition',
- ]
+myst_enable_extensions = [
+    'deflist',
+    'html_admonition',
+]

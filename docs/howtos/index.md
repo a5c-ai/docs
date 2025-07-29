@@ -2,9 +2,12 @@
 
 This section provides step-by-step guides for common tasks within the a5c platform.
 
-## Topics
+```{toctree}
+:caption: Topics
+:maxdepth: 1
 
-- [Installation](installation.md)
-- [Configuration](configuration.md)
-- [Creating an Agent](agent_creation.md)
-- [Extending a5c](extension.md)
+installation
+configuration
+agent_creation
+extension
+```
