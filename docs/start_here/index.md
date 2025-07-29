@@ -40,24 +40,10 @@ Once started, the agents will analyze your repo and begin automating tasks. It m
 
 ## Next Topics
 
-Below are placeholder sections for topics covered later in this Start Here guide:
+Below are detailed guides for each topic. Click to learn more:
 
-### Installation Details
-
-Content for the installation details section will go here.
-
-### Configuration
-
-Content for the configuration section will go here.
-
-### First Project
-
-Content for the first project section will go here.
-
-### Command Reference
-
-Content for the command reference section will go here.
-
-### Troubleshooting
-
-Content for the troubleshooting section will go here.
+- [Installation Details](installation_details.md)
+- [Configuration](configuration.md)
+- [First Project](first_project.md)
+- [Command Reference](command_reference.md)
+- [Troubleshooting](troubleshooting.md)
