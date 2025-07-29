@@ -25,3 +25,6 @@ remote_agents:
 
       - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/team-installer-agent.agent.md"
         alias: "team-installer-agent"
+
+agents:
+  - alias: content-writer-agent
