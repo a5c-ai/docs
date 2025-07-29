@@ -25,3 +25,11 @@ remote_agents:
 
       - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/team-installer-agent.agent.md"
         alias: "team-installer-agent"
+
+      # Project orchestration and maintenance agents
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/producer-agent.agent.md"
+        alias: "producer-agent"
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/conflict-resolver-agent.agent.md"
+        alias: "conflict-resolver-agent"
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/documenter-agent.agent.md"
+        alias: "documenter-agent"
