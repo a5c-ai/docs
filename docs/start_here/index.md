@@ -38,6 +38,26 @@ a5c start
 
 Once started, the agents will analyze your repo and begin automating tasks. It may take a few minutes on first run.
 
+## Git Workflow
+
+a5c agents integrate deeply with Git to track and automate changes in your repository. Each action taken by an agent is committed through dedicated branches and pull requests, providing clear audit trails and collaboration points.
+
+Key points:
+
+- Agents create branches following the naming convention `a5c/agent/<agent-name>/<task>`.
+- All automated changes are opened as pull requests for your review, with detailed descriptions and context.
+- Agents monitor branch updates, commit messages, and diffs to trigger code analysis, automated fixes, or documentation updates.
+
+## Agent Proactiveness
+
+a5c’s AI agents are proactive, continuously scanning your repository for opportunities to improve code quality, maintain documentation, and optimize workflows. They listen to Git events (pushes, pull requests, and issue comments) and act without manual intervention when possible.
+
+Highlights of agent proactiveness:
+
+- Automated linting, formatting, and testing feedback on every commit.
+- Regular detection of stale or missing documentation, with automated suggestions or updates.
+- Dependency and security alert management through automated issues and pull requests.
+
 ## Next Topics
 
 Below are placeholder sections for topics covered later in this Start Here guide:
