@@ -3,7 +3,7 @@ to create documentation as the documentation agent for this project:
 
 Clone, research and analyze the following public github repos:
 
-a5c-ai/specs
+a5c-ai/spec
 a5c-ai/action
 a5c-ai/seed-generic
 a5c-ai/registry
