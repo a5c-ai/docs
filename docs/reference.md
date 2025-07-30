@@ -47,4 +47,15 @@ For additional configuration examples and advanced settings, consult the full `.
 
 a5c does not currently provide a dedicated command-line interface. Instead, agent invocation is controlled via the `cli_command` template in `.a5c/config.yml`. This allows you to integrate any shell-based AI client (e.g., `codex exec`, `claude`, or `openai`) as needed.
 
+### Selecting the AI client
+
+You can configure which AI client to use by setting the `A5C_CLI_TOOL` environment variable in your GitHub Actions variables. Valid values are:
+
+- `claude`
+- `codex`
+- `azure_codex`
+- `gemini`
+
+Set the variable at the repository or organization level under **Settings → Secrets and variables → Actions → Variables**.
+
 <!-- Additional command patterns may be documented here if a dedicated a5c CLI is introduced in the future. -->

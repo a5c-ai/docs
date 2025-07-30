@@ -13,10 +13,14 @@ Get started with a5c in minutes by following this quickstart guide. You'll set u
 
 ## 5-Minute Quickstart
 
-1. **Add your API key to GitHub**  
-   In your repository, go to **Settings → Secrets and variables → Actions → New repository secret**.  
+1. **Add your environment variables to GitHub**  
+   In your repository, go to **Settings → Secrets and variables → Actions**, then create a **New repository secret** (for API keys) and a **New repository variable** (for additional settings).  
+   
    - Secret name: `OPENAI_API_KEY` or `ANTHROPIC_API_KEY`  
-   - Secret value: Your provider API key.
+     Secret value: Your provider API key.  
+   - Variable name: `A5C_CLI_TOOL`  
+     Variable value: One of `claude`, `codex`, `azure_codex`, or `gemini`.  
+     *Note*: Free GitHub users cannot set organization-level variables. If you have a Pro or Team plan, you can also set `A5C_CLI_TOOL` at the organization or user level to apply across all your repositories.
 
 2. **Wake up your repository**  
    Create the GitHub Actions workflow file at `.github/workflows/a5c.yml`:
