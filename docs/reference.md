@@ -4,7 +4,7 @@ This section provides a detailed reference for the a5c project, covering public 
 
 ## API Reference
 
-Public API definitions, endpoint specifications, and data models are maintained in the [a5c-ai/specs](https://github.com/a5c-ai/specs) repository. For comprehensive interface details, refer to:
+Public API definitions, endpoint specifications, and data models are maintained in the [a5c-ai/spec](https://github.com/a5c-ai/spec) repository. For comprehensive interface details, refer to:
 
 - https://github.com/a5c-ai/specs
 

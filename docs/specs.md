@@ -50,3 +50,4 @@ These specifications are living documents that evolve with the A5C ecosystem:
 ## License
 
 These specifications are licensed under the same license as the main A5C project.
+
