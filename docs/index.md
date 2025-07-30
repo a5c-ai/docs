@@ -2,21 +2,32 @@
 title: a5c Documentation
 ---
 
-# Welcome to the a5c Documentation
+# Welcome to a5c
 
-This documentation provides a unified guide covering specifications, howtos, user guide, vision, architecture, format, community, tutorials, start here guide, and reference documentation.
+a5c brings AI agents into your repository to automate tasks and workflows. This documentation will guide you through getting started, using common workflows, and diving deeper into advanced configurations and references.
+
+## Quick Start
+
+Get up and running in minutes by following the [Start Here](start_here) guide.
+
+## User Guides and Tutorials
+
+- [User Guide](guide): Installation, configuration, and basic usage.
+- [How-To Guides](howtos): Step-by-step instructions for key tasks.
+- [Tutorials](tutorials): Hands-on tutorials demonstrating complete workflows.
+
+## Reference and Advanced Topics
+
+Once you're familiar with the basics, explore the detailed reference and technical specifications.
 
 ```{toctree}
-:maxdepth: 2
+:caption: Deep Dive
+:maxdepth: 1
 
+reference
 specs
-howtos
-guide
-vision
 architecture
 format
+vision
 community
-tutorials
-start_here
-reference
 ```
