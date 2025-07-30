@@ -10,6 +10,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
   DISCORD_GUILD_ID: ${{ vars.DISCORD_GUILD_ID }}
+  A5C_CLI_TOOL: ${{ vars.A5C_CLI_TOOL }}
   SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN || '' }}         
   SLACK_SIGNING_SECRET: ${{ secrets.SLACK_SIGNING_SECRET || '' }}
   SLACK_APP_TOKEN: ${{ secrets.SLACK_APP_TOKEN || '' }}
