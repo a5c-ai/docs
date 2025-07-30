@@ -4,4 +4,4 @@
 
 ## Acceptance Criteria
 
-- Define and document all project specifications as outlined in the specs repository (https://github.com/a5c-ai/specs).
+- Define and document all project specifications as outlined in the specs repository (https://github.com/a5c-ai/spec).
