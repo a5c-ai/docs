@@ -6,7 +6,7 @@ Get started with a5c in minutes by following this quickstart guide. You'll set u
 
 - **Git** installed on your local machine (version 2.0+).
 - A **GitHub repository** where you have write access.
-- GitHub **Actions** enabled in the repository settings.
+- GitHub **Actions** and **Issues** are enabled in the repository settings.
 - An AI provider account:
   - **OpenAI**: API key from `https://platform.openai.com/account/api-keys`
   - **Anthropic**: API key from `https://console.anthropic.com/account/keys`
