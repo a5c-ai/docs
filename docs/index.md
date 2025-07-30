@@ -16,6 +16,16 @@ Get up and running in minutes by following the [Start Here](start_here) guide.
 - [How-To Guides](howtos): Step-by-step instructions for key tasks.
 - [Tutorials](tutorials): Hands-on tutorials demonstrating complete workflows.
 
+## Articles
+
+```{toctree}
+:caption: Articles
+:glob:
+:maxdepth: 1
+
+articles/*
+```
+
 ## Reference and Advanced Topics
 
 Once you're familiar with the basics, explore the detailed reference and technical specifications.
