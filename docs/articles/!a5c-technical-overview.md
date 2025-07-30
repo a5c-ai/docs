@@ -282,11 +282,12 @@ The platform turns the concept of "building software" into "building software th
 
 ## Getting Started
 
-The fastest way to experience a5c is through our 5-minute quick start. Choose between:
+The fastest way to experience a5c is through our 5-minute quick start. Select the path that best aligns with your workflow needs:
 
-1. **New Project**: Use our pre-configured template for instant setup
-2. **Existing Repository**: Add a5c to your current projects with minimal configuration
+1. **New Project**:  
+   Start from scratch using our [seed-generic](https://github.com/a5c-ai/seed-generic) or language-specific seed templates to bootstrap a fully configured a5c repository. Clone the template, update the frontmatter, and push to your repo to activate best-practice prompts, workflows, and agent definitions instantly.
 
-Both paths provide a complete development environment with AI agents ready to enhance your workflow from day one.
+2. **Existing Repository**:  
+   Integrate a5c into your current codebase with minimal changes. Add the GitHub Action and configuration files, commit sample agent definitions, and ensure **Issues** and **Actions** are enabled under **Settings → General → Features** to start leveraging AI-driven workflows without altering your project structure.
 
-Transform your repository into an intelligent development partner today.
+Both approaches deliver a complete AI-powered development environment ready to enhance your pipeline from day one. See the [Start Here guide](../start_here.md) for full setup instructions.
