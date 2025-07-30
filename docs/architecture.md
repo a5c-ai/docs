@@ -77,7 +77,7 @@ Starter templates for new agents are available in the [a5c-ai/seed-generic](http
 
 ## Further Reading
 
-- [a5c Technical Overview Article](../articles/!a5c-technical-overview.md)
+- [a5c Technical Overview Article](../articles/a5c-technical-overview.md)
 - [Community Guide](community.md)
 - [Configuration Reference](format.md)
 - [Developer Quick Start](start_here.md)
