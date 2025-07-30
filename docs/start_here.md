@@ -38,7 +38,38 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-3. **Enable repository features**  
+3. **Activate your first agent**  
+   Agents can be triggered in two ways:
+
+   - **Issue-based activation**: Create a GitHub issue or comment with an agent directive. For example:
+     ```text
+     # Title: Summarize PR #123
+     @code-reviewer Please review the changes and suggest improvements.
+     ```
+
+   - **Push-based activation**: Define agent tasks in your config file (`.a5c/config.yml`) or file frontmatter. On push events, the workflow will run agents based on your config. For example:
+     ```yaml
+     # .a5c/config.yml
+     agents:
+       - name: doc-writer
+         triggers:
+           on:
+             push:
+               branches:
+                 - main
+     ```
+     And in content files:
+     ```markdown
+     ---
+     agent: doc-writer
+     description: "Generate API docs for new endpoints"
+     ---
+     # API Endpoints
+     ...
+     ```
+     Then commit and push to trigger the `doc-writer` agent.
+
+4. **Enable repository features**  
    Ensure **Issues** and **Actions** are enabled under **Settings → General → Features**.
 
 ## Next Steps
