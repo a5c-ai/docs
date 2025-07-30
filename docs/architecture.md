@@ -67,7 +67,7 @@ A community-driven registry (see [a5c-ai/registry](https://github.com/a5c-ai/reg
 
 ## Seed Templates
 
-Starter templates for new agents are available in the [a5c-ai/seed-generic](https://github.com/a5c-ai/seed-generic) repository. Use these seeds to bootstrap custom agents with best-practice frontmatter and prompts.
+Starter templates for new a5c projects are available in the [a5c-ai/seed-generic](https://github.com/a5c-ai/seed-generic) repository. Use these seeds to bootstrap custom projects with best-practice frontmatter and prompts.
 
 ## Integration Points
 
