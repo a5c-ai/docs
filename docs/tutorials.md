@@ -6,7 +6,7 @@ Welcome to the **Tutorials** section. Here you will find step-by-step guides des
 
 - **5‑Minute Quickstart**: Deploy your first AI agent and wake up your repository in minutes. See [Start Here](start_here.md).
 - **Custom AI Agents**: Learn how to create and configure your own AI agents for bespoke automation workflows. See [Howtos](howtos.md).
-- **CI/CD Integration**: Integrate a5c workflows into your GitHub Actions pipelines. For an in-depth guide, see the [CI/CD That Thinks](articles/CI-CD-That-Thinks.md) article.
+- **CI/CD Integration**: Integrate a5c workflows into your GitHub Actions pipelines. For an in-depth guide, see the [CI/CD That Thinks](https://medium.com/a5c-ai/ci-cd-that-thinks) article.
 - **Advanced Agent Pipelines**: Chain multiple agents together to automate complex, multi-step processes.
 - **Monitoring & Troubleshooting**: Best practices for collecting logs, debugging agents, and recovering from failures.
 
@@ -19,9 +19,9 @@ Welcome to the **Tutorials** section. Here you will find step-by-step guides des
 
 ## Articles
 
-- [CI/CD That Thinks](articles/CI-CD-That-Thinks.md)
-- [Living Git: Where Your Repo Writes Back](articles/Living-Git_-Where-Your-Repo-Writes-Back.md)
-- [Wake Up Your Code: Meet a5c, the First Living Repository](articles/Wake-Up-Your-Code_-Meet-a5c,-the-First-Living-Repository.md)
+- [CI/CD That Thinks](https://medium.com/a5c-ai/ci-cd-that-thinks)
+- [Living Git: Where Your Repo Writes Back](https://medium.com/a5c-ai/living-git-where-your-repo-writes-back)
+- [Wake Up Your Code: Meet a5c, the First Living Repository](https://medium.com/a5c-ai/wake-up-your-code-meet-a5c-the-first-living-repository)
 
 ## Getting Help
 

@@ -77,7 +77,7 @@ Starter templates for new a5c projects are available in the [a5c-ai/seed-generic
 
 ## Further Reading
 
-- [a5c Technical Overview Article](articles/!a5c-technical-overview.md)
+- [a5c Technical Overview Article](https://medium.com/a5c-ai/a5c-technical-overview)
 - [Community Guide](community.md)
 - [Configuration Reference](format.md)
 - [Developer Quick Start](start_here.md)
