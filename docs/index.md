@@ -8,7 +8,10 @@ a5c brings AI agents into your repository to automate tasks and workflows. This 
 
 ## Quick Start
 
-Get up and running in minutes by following the [Start Here](start_here) guide.
+Get up and running in minutes by choosing a setup and following the respective guide:
+
+- [New Project](start_here#new-project) — Initialize a brand-new repository and configure a5c.
+- [Existing Project](start_here#existing-project) — Add a5c to your existing repository with minimal changes.
 
 ## User Guides and Tutorials
 
