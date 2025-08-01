@@ -13,6 +13,6 @@ Generative AI has made raw coding cheap. The new competitive edge is orchestrati
 Join the a5c.ai Community
 a5c is not just another vendor; it's a movement. Builders, product thinkers, and curious newcomers are already shaping what we create next - voting on features, sharing prompts, and exploring what happens when code truly wakes up.
 Ready to see it for yourself?
-Join our discord community building software that builds itself.
+[Join our Discord community building software that builds itself.](https://discord.gg/pCVhdtrFfr)
 Star us on Github
 Visit a5c.ai
