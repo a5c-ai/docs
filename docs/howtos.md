@@ -19,7 +19,7 @@ Welcome to the **How-To Guides** section. Here you'll find step-by-step instruct
 | **Create a custom AI agent**     | Add a new agent definition under `.a5c/agents/` and test it locally. See [User Guide](guide.md). |
 | **Configure label-based automation** | Use issue/PR labels to trigger agents automatically. Includes GitHub Actions examples. |
 | **Build an agent pipeline**      | Chain multiple agents to implement complex workflows. See [Tutorials](tutorials.md).    |
-| **CI/CD integration**            | Integrate a5c into your CI/CD pipelines. See [CI/CD That Thinks](articles/CI-CD-That-Thinks.md). |
+| **CI/CD integration**            | Integrate a5c into your CI/CD pipelines. See [CI/CD That Thinks](https://medium.com/a5c-ai/ci-cd-that-thinks). |
 | **Troubleshoot and recover**     | Best practices for debugging agents and handling errors.                                |
 
 ## Best Practices
@@ -31,6 +31,6 @@ Welcome to the **How-To Guides** section. Here you'll find step-by-step instruct
 
 ## Articles
 
-- [CI/CD That Thinks](articles/CI-CD-That-Thinks.md)
-- [Living Git: Where Your Repo Writes Back](articles/Living-Git_-Where-Your-Repo-Writes-Back.md)
-- [Wake Up Your Code: Meet a5c](articles/Wake-Up-Your-Code_-Meet-a5c,-the-First-Living-Repository.md)
+- [CI/CD That Thinks](https://medium.com/a5c-ai/ci-cd-that-thinks)
+- [Living Git: Where Your Repo Writes Back](https://medium.com/a5c-ai/living-git-where-your-repo-writes-back)
+- [Wake Up Your Code: Meet a5c](https://medium.com/a5c-ai/wake-up-your-code-meet-a5c-the-first-living-repository)
