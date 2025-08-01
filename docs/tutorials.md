@@ -25,4 +25,4 @@ Welcome to the **Tutorials** section. Here you will find step-by-step guides des
 
 ## Getting Help
 
-If you have questions or need assistance with any tutorial, join the [a5c community chat](https://discord.gg/a5c-ai) or open an issue on GitHub.
+If you have questions or need assistance with any tutorial, join the [a5c community chat](https://discord.gg/pCVhdtrFfr) or open an issue on GitHub.

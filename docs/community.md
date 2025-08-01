@@ -34,7 +34,7 @@ Pull requests should include:
 
 Connect with other contributors and users through:
 
-- **Discord**: Join our discussion at https://discord.gg/a5c-ai
+- **Discord**: Join our discussion at https://discord.gg/pCVhdtrFfr
 - **GitHub Discussions**: Engage in longer-form conversations at https://github.com/a5c-ai/docs/discussions
 - **Twitter**: Follow us [@a5c_ai](https://twitter.com/a5c_ai) for announcements.
 
