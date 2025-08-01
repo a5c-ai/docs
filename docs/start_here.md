@@ -2,11 +2,24 @@
 
 Get started with a5c in minutes by following this quickstart guide. You'll set up your environment, enable AI agents in your repository, and run your first agent workflow.
 
+This guide supports two workflows:
+
+- **New Project**: Initialize and set up a brand-new GitHub repository with a5c.
+- **Existing Project**: Add a5c to an existing GitHub repository with minimal setup.
+
+## New Project
+
+If you are starting a brand-new GitHub repository, first create a new repository where you have write access.
+
+## Existing Project
+
+If you already have a GitHub repository, ensure you have write access and navigate to it to add a5c.
+
 ## Prerequisites
 
 - **Git** installed on your local machine (version 2.0+).
 - A **GitHub repository** where you have write access.
-- GitHub **Actions** and **Issues** are enabled in the repository settings.
+- GitHub **Actions** and **Issues** are enabled under **Settings → General → Features** (ensure both boxes are checked).
 - An AI provider account:
   - **OpenAI**: API key from `https://platform.openai.com/account/api-keys`
   - **Anthropic**: API key from `https://console.anthropic.com/account/keys`
@@ -43,7 +56,7 @@ jobs:
 ```
 
 3. **Enable repository features**  
-   Ensure **Issues** and **Actions** are enabled under **Settings → General → Features**.
+   Go to **Settings → General → Features** in your repository and ensure that **Issues** and **Actions** are enabled (checkboxes checked).
 
 ## Activating Agents
 
@@ -69,6 +82,10 @@ You can also activate agents by adding agent definition files in your repository
 ```
 
 Each agent file under `.a5c/agents/` contains YAML frontmatter that defines its name, description, triggers, and routing information. When you push or merge these files, the agents are loaded by the a5c GitHub Action and will run automatically when their triggers match events in your repository.
+
+## Before You Launch
+
+A full-featured and complex project can nudge toward $20-50. Worth it for what used to be months of work, but set a cap if you like.
 
 ## Next Steps
 
