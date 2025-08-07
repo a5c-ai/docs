@@ -20,6 +20,7 @@ Welcome to the **How-To Guides** section. Here you'll find step-by-step instruct
 | **Configure label-based automation** | Use issue/PR labels to trigger agents automatically. Includes GitHub Actions examples. |
 | **Build an agent pipeline**      | Chain multiple agents to implement complex workflows. See [Tutorials](tutorials.md).    |
 | **CI/CD integration**            | Integrate a5c into your CI/CD pipelines. See [CI/CD That Thinks](articles/CI-CD-That-Thinks.md). |
+| **AWS CLI Deployment & SRE Integration** | Step-by-step guide to deploy to AWS using the AWS CLI and trigger SRE agents for pipeline extension and error recovery. See [AWS Deployment Guide](aws-deployment.md). |
 | **Troubleshoot and recover**     | Best practices for debugging agents and handling errors.                                |
 
 ## Best Practices
