@@ -6,6 +6,7 @@ Welcome to the **How-To Guides** section. Here you'll find step-by-step instruct
 
 - **Initialize a5c in your repository**: Get started with a minimal configuration and run your first agent.
 - **Add and configure custom AI agents**: Define your own agents and adjust settings in `.a5c/config.yml`.
+- **Customize and extend AI agents**: Define custom agent files under `.a5c/agents/`, structure definitions, use shared templates, and reference registry examples. See [Agent Customization](agent_customization.md).
 - **Implement label-based triggers**: Automate workflows based on issue or pull request labels.
 - **Chain agents into pipelines**: Combine multiple agents to perform multi-step automation.
 - **Integrate with CI/CD**: Embed a5c workflows into GitHub Actions or other pipelines.
@@ -16,7 +17,7 @@ Welcome to the **How-To Guides** section. Here you'll find step-by-step instruct
 | Tutorial                         | Description                                                                             |
 |----------------------------------|-----------------------------------------------------------------------------------------|
 | **Bootstrap a5c**                | Initialize and run your first AI agent. See [Start Here](start_here.md).               |
-| **Create a custom AI agent**     | Add a new agent definition under `.a5c/agents/` and test it locally. See [User Guide](guide.md). |
+| **Create a custom AI agent**     | Add a new agent definition under `.a5c/agents/` and test it locally. See [Agent Customization](agent_customization.md). |
 | **Configure label-based automation** | Use issue/PR labels to trigger agents automatically. Includes GitHub Actions examples. |
 | **Build an agent pipeline**      | Chain multiple agents to implement complex workflows. See [Tutorials](tutorials.md).    |
 | **CI/CD integration**            | Integrate a5c into your CI/CD pipelines. See [CI/CD That Thinks](articles/CI-CD-That-Thinks.md). |
