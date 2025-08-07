@@ -25,6 +25,15 @@ Defines the community proposal system for A5C development, including:
 - Governance model
 - Proposal templates and tools
 
+### Coding Standards Specification
+
+Defines the standard for coding conventions, documentation layout, and repository structure to ensure consistency and quality across a5c contributions:
+
+- Repository directory layout and naming conventions.
+- Documentation file naming, frontmatter, and content organization.
+- Agent definition format and required metadata fields.
+- Pre-commit hook configuration and examples.
+
 ## Contributing
 
 These specifications are living documents that evolve with the A5C ecosystem:
@@ -39,6 +48,7 @@ These specifications are living documents that evolve with the A5C ecosystem:
 |--------------------------------|--------|----------------|-------------------------------|
 | Agent Format Specification     | Draft  | Partial        | Based on existing examples    |
 | Proposal System Specification  | Draft  | Not Started    | New community governance flow |
+| Coding Standards Specification | Draft  | Not Started    | See `docs/coding-standard.md` |
 
 ## Version History
 
@@ -50,4 +60,3 @@ These specifications are living documents that evolve with the A5C ecosystem:
 ## License
 
 These specifications are licensed under the same license as the main A5C project.
-
